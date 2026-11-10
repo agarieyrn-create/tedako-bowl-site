@@ -4,10 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>てだこボウル｜沖縄・浦添 36レーン2フロアのボウリング場</title>
-<meta name="description" content="沖縄県浦添市のてだこボウル。36レーン・2フロア、個室レーン10本、ノーガターレーンを備えた年中無休のボウリング場。朝8時〜10時は1ゲーム100円、駐車場130台。家族でも仲間とも、朝から翌1時まで思いきり遊べます。">
+<meta name="description" content="沖縄県浦添市伊祖のボウリング場「てだこボウル」。2階・4階に計36レーン、個室レーン10本、ノーガターレーン、駐車場130台。平日9時、土日祝8時から翌1時まで営業。土日朝8〜10時受付は1ゲーム100円。">
 <meta property="og:title" content="てだこボウル｜沖縄・浦添 36レーン2フロアのボウリング場">
-<meta property="og:description" content="きょうは、転がして笑おう。浦添の36レーンで、家族も仲間も大あばれ。朝得1ゲーム100円・駐車場130台・年中無休。">
+<meta property="og:description" content="家族で楽しめるノーガターレーン、個室レーン、駐車場130台。土日朝8〜10時受付で1ゲーム100円。営業時間・料金・大会情報は公式案内をご確認ください。">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="てだこボウル">
+<meta property="og:locale" content="ja_JP">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BowlingAlley",
+  "name": "てだこボウル",
+  "description": "沖縄県浦添市伊祖にあるボウリング場。2階・4階に各18レーン、個室レーン10本、ノーガターレーンを備えています。",
+  "telephone": "+81-98-874-5555",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "901-2132",
+    "addressRegion": "沖縄県",
+    "addressLocality": "浦添市",
+    "streetAddress": "伊祖2-9-2",
+    "addressCountry": "JP"
+  },
+  "sameAs": [
+    "https://tedakobowl.com/",
+    "https://www.instagram.com/tedako_bowl",
+    "https://www.facebook.com/tedakobowl2"
+  ]
+}
+</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230f6f73'/%3E%3Ccircle cx='50' cy='50' r='30' fill='%23ff6a4d'/%3E%3Ccircle cx='41' cy='42' r='5' fill='%23062c35'/%3E%3Ccircle cx='58' cy='42' r='5' fill='%23062c35'/%3E%3Ccircle cx='50' cy='59' r='5' fill='%23062c35'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -142,11 +166,7 @@
     border-radius:50%;border:8px solid rgba(255,248,238,.94);
     box-shadow:0 34px 60px rgba(0,0,0,.38);
   }
-  .hero-photo-sub{
-    position:absolute;left:-6px;bottom:24px;
-    width:134px;height:134px;border-radius:50%;object-fit:cover;
-    border:6px solid #fff8ee;box-shadow:0 18px 36px rgba(0,0,0,.32);
-  }
+  .hero-photo-note{margin-top:8px;text-align:center;color:rgba(255,255,255,.78);font-size:10.5px;line-height:1.5}
   .hero-flower{
     position:absolute;top:6px;left:10px;width:56px;height:56px;
     transform:rotate(-14deg);filter:drop-shadow(0 8px 14px rgba(0,0,0,.28));
@@ -274,11 +294,10 @@
 
   /* gallery */
   .photo-band{
-    display:grid;grid-template-columns:1.5fr 1fr;grid-template-rows:200px 200px;
+    display:grid;grid-template-columns:1fr 1fr;grid-template-rows:260px;
     gap:14px;margin-bottom:14px;
   }
   .photo-band figure{margin:0;position:relative;overflow:hidden;border-radius:22px;background:#0a3a40}
-  .photo-band figure:first-child{grid-row:span 2}
   .photo-band img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
   .photo-band figure:hover img{transform:scale(1.04)}
   .photo-band figcaption{
@@ -419,7 +438,6 @@
     .pack-grid{grid-template-columns:1fr}
     .photo-band{grid-template-columns:1fr 1fr;grid-template-rows:auto}
     .photo-band figure{aspect-ratio:4/3}
-    .photo-band figure:first-child{grid-column:1 / -1;grid-row:auto;aspect-ratio:16/9}
   }
   @media (max-width:860px){
     .nav{
@@ -449,7 +467,6 @@
     .hero-badge strong{font-size:24px}
     .hero-badge b{font-size:13px}
     .hero-photo{width:min(100%,340px)}
-    .hero-photo-sub{width:96px;height:96px;bottom:6px;left:0}
     .hero-flower{width:44px;height:44px;top:2px;left:2px}
     .btn{padding:14px 22px;font-size:14px}
     .cards{grid-template-columns:1fr}
@@ -463,7 +480,7 @@
     .footer-links{gap:30px}
     .section-head{margin-bottom:32px}
     .photo-band{grid-template-columns:1fr}
-    .photo-band figure,.photo-band figure:first-child{grid-column:auto;aspect-ratio:4/3}
+    .photo-band figure{aspect-ratio:4/3}
     .photo-note{text-align:left;margin-bottom:28px}
 
     /* 料金表はスマホでは1行ずつ積む */
@@ -533,7 +550,7 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow">Urasoe, Okinawa — Since 2010</span>
+        <span class="eyebrow">Urasoe, Okinawa</span>
         <h1>きょうは、<br><em>転がして</em>笑おう。</h1>
         <p class="hero-lead">
           浦添のてだこボウルは、<strong>36レーン・2フロア</strong>のビッグな遊び場。
@@ -556,8 +573,7 @@
 
       <div class="hero-art">
         <div class="hero-photo">
-          <img class="hero-photo-main" src="images/lane.jpg" alt="木目のボウリングレーンに並ぶピン">
-          <img class="hero-photo-sub" src="images/scene-family.jpg" alt="親子でボウリングを楽しむ様子">
+          <img class="hero-photo-main" src="images/lane.jpg" alt="ボウリングレーンとピンのイメージ写真">
           <svg class="hero-flower" viewBox="0 0 120 120" aria-hidden="true">
             <g transform="translate(60 60)">
               <g fill="#ff6a4d">
@@ -572,9 +588,10 @@
           </svg>
         </div>
         <div class="hero-badge">
-          <small>土日 朝8:00〜10:00受付</small>
+          <small>土日 8:00〜10:00受付限定</small>
           <b>1ゲーム <strong>¥100</strong></b>
         </div>
+        <p class="hero-photo-note">※掲載写真はイメージです。実際の店舗・人物を撮影したものではありません。</p>
       </div>
     </div>
   </section>
@@ -638,7 +655,7 @@
       <div class="section-head reveal">
         <span class="kicker">How to Enjoy</span>
         <h2>だれと行く？<br>今日のシーンで選ぶ。</h2>
-        <p>同じ36レーンでも、楽しみ方はいろいろ。集まる人数と気分に合わせて、ぴったりの過ごし方を見つけてください。</p>
+        <p>同じ36レーンでも、楽しみ方はいろいろ。集まる人数と気分に合わせて、ぴったりの過ごし方を見つけてください。掲載写真はイメージです。</p>
       </div>
       <div class="scenes">
         <article class="scene scene-1 reveal">
@@ -812,19 +829,15 @@
       </div>
       <div class="photo-band">
         <figure class="reveal">
-          <img src="images/lane.jpg" alt="木目のレーンに並ぶボウリングのピン" loading="lazy">
-          <figcaption><span>36 LANES / 2 FLOORS</span>広いレーンで、思いきり。</figcaption>
+          <img src="images/balls.jpg" alt="カラフルなボウリングボールのイメージ写真" loading="lazy">
+          <figcaption><span>FREE BALL RENTAL</span>ボールは無料で貸し出し。</figcaption>
         </figure>
         <figure class="reveal">
-          <img src="images/balls.jpg" alt="ボールリターンに並ぶカラフルなボウリングボール" loading="lazy">
-          <figcaption><span>RENTAL</span>ボールは無料で貸し出し。</figcaption>
-        </figure>
-        <figure class="reveal">
-          <img src="images/shoes.jpg" alt="レーンの上に置かれたボウリングシューズとボール" loading="lazy">
+          <img src="images/shoes.jpg" alt="ボウリングシューズのイメージ写真" loading="lazy">
           <figcaption><span>SHOES</span>貸しシューズ 1足320円。</figcaption>
         </figure>
       </div>
-      <p class="photo-note">※掲載写真はイメージです。</p>
+      <p class="photo-note">※掲載写真はイメージです。実際の館内・人物を撮影した写真ではありません。</p>
 
       <div class="floors">
         <article class="floor reveal">
@@ -880,43 +893,15 @@
       <div class="section-head reveal">
         <span class="kicker">Events &amp; Community</span>
         <h2>うまくなっても、<br>ならなくても、参加OK。</h2>
-        <p>毎月、初心者から常連さんまで楽しめる大会・月例会を開催しています。観戦だけでも、見学だけでも歓迎です。</p>
+        <p>大会・月例会の開催日や参加条件、参加費は月ごとに変わります。ご参加を検討される方は、最新情報を公式Instagramまたはお電話でご確認ください。</p>
       </div>
       <div class="event-layout">
         <div class="event-list reveal">
           <div class="event-item">
-            <div class="event-day"><small>毎月</small><b>第1<br>日曜</b></div>
+            <div class="event-day"><small>最新情報</small><b>開催日<br>確認</b></div>
             <div>
-              <h4>支配人杯 ボウリング大会</h4>
-              <p>月替わりのスタートを切る、恒例のオープン大会。</p>
-            </div>
-          </div>
-          <div class="event-item">
-            <div class="event-day"><small>毎月</small><b>第2<br>日曜</b></div>
-            <div>
-              <h4>シニア＆レディース月例会 / ダブルス大会</h4>
-              <p>シニア・レディースの月例会と、ペアで挑むダブルス大会。</p>
-            </div>
-          </div>
-          <div class="event-item">
-            <div class="event-day"><small>毎月</small><b>第3<br>日曜</b></div>
-            <div>
-              <h4>サンデーモーニングボウリング大会</h4>
-              <p>朝から気持ちよく投げる、日曜のモーニング大会。</p>
-            </div>
-          </div>
-          <div class="event-item">
-            <div class="event-day"><small>毎月</small><b>第4<br>金曜</b></div>
-            <div>
-              <h4>「T3」てだこトリオボウリング大会</h4>
-              <p>3人1組でチーム対抗。仲間とわいわい楽しめる大会です。</p>
-            </div>
-          </div>
-          <div class="event-item">
-            <div class="event-day"><small>毎月</small><b>第4<br>日曜</b></div>
-            <div>
-              <h4>おはようボウリング月例会 / 月例会</h4>
-              <p>毎月の成果を試す月例会。参加方法は店頭でご案内します。</p>
+              <h4>大会・月例会の開催情報</h4>
+              <p>日程・参加条件・参加費は月ごとに異なります。<a href="https://www.instagram.com/tedako_bowl" target="_blank" rel="noopener">公式Instagram</a>またはお電話でご確認ください。</p>
             </div>
           </div>
         </div>
@@ -924,14 +909,14 @@
           <div class="side-card teal reveal">
             <span class="side-label">MEMBERS</span>
             <h3>メンバーズカードで、<br>いつものプレイがもっとお得に。</h3>
-            <p>入会したその日から使えるメンバー料金。プロショップの商品10%割引（特価品除く）やロッカー利用など、通うほどお得になります。</p>
+            <p>メンバー料金やロッカーの利用条件など、メンバーズカードの詳しい内容は店舗へご確認ください。</p>
             <a class="arrow" href="tel:0988745555">入会方法を聞く →</a>
           </div>
           <div class="side-card sun reveal">
             <span class="side-label">BEGINNERS</span>
-            <h3>初心者向け<br>3点セット好評販売中。</h3>
-            <p>これから始める人にうれしいセットをご用意しています。詳細は2階フロントスタッフまでお気軽にどうぞ。</p>
-            <a class="arrow" href="#access">店舗情報を見る →</a>
+            <h3>はじめてでも、<br>手ぶらでOK。</h3>
+            <p>ボールは無料で貸し出しています。貸しシューズは1足320円（6歳以下無料）。利用方法は2階フロントでご確認ください。</p>
+            <a class="arrow" href="tel:0988745555">利用方法を聞く →</a>
           </div>
         </div>
       </div>
@@ -981,7 +966,7 @@
             </span>
             <div>
               <h4>ACCESS / PARKING</h4>
-              <p>バス停「伊祖入口」すぐ<br>ゆいレール「古島駅」からバス約5分＋徒歩<br>那覇バスターミナルからバス約25分<br>駐車場130台</p>
+              <p>お車でお越しの方は駐車場130台をご利用いただけます。公共交通機関でお越しの場合は、Googleマップで経路をご確認ください。</p>
             </div>
           </div>
         </div>
@@ -1009,7 +994,7 @@
       <div class="faq">
         <details class="reveal">
           <summary>予約はできますか？</summary>
-          <div class="answer">団体でのご利用やレーン確保については、お電話（098-874-5555）でご相談ください。空き状況もあわせてご案内します。</div>
+          <div class="answer">団体利用やレーン確保の可否・条件は、人数や日時によって異なります。お電話（098-874-5555）でご相談ください。</div>
         </details>
         <details class="reveal">
           <summary>手ぶらでも大丈夫ですか？</summary>
@@ -1077,7 +1062,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-note">掲載内容は2026年11月時点で公開されている情報をもとに構成したものです。営業時間・料金・イベント内容は変更となる場合がありますので、お出かけ前に店舗へご確認ください。</p>
+      <p class="footer-note">住所・営業時間・施設情報は<a href="https://tedakobowl.com/" target="_blank" rel="noopener">てだこボウル公式サイト</a>を参照しています。料金・大会予定は変更となる場合があるため、お出かけ前に店舗へご確認ください。</p>
       <p>&copy; 2026 てだこボウル</p>
     </div>
   </div>
