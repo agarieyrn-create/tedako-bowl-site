@@ -4,14 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>てだこボウル｜沖縄・浦添 36レーン2フロアのボウリング場</title>
-<meta name="description" content="沖縄県浦添市のてだこボウル。36レーン・2フロア、個室レーン10本、ノーガターレーンを備えた年中無休のボウリング場。朝8時〜10時は1ゲーム100円、駐車場130台。家族でも仲間とも、朝から翌1時まで思いきり遊べます。">
+<meta name="description" content="沖縄県浦添市のてだこボウル。36レーン・2フロア、個室レーン10本、ノーガターレーンを備えた年中無休のボウリング場。土日の朝8時〜10時受付は1ゲーム100円、駐車場130台。家族でも仲間とも、朝から翌1時まで思いきり遊べます。">
 <meta property="og:title" content="てだこボウル｜沖縄・浦添 36レーン2フロアのボウリング場">
 <meta property="og:description" content="きょうは、転がして笑おう。浦添の36レーンで、家族も仲間も大あばれ。朝得1ゲーム100円・駐車場130台・年中無休。">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://site-689478affd56400bb480dec831bfdccc.freebuff.page/">
+<meta property="og:image" content="https://site-689478affd56400bb480dec831bfdccc.freebuff.page/images/ogp.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BowlingAlley","name":"てだこボウル","telephone":"+81-98-874-5555","address":{"@type":"PostalAddress","streetAddress":"伊祖2-9-2","addressLocality":"浦添市","addressRegion":"沖縄県","postalCode":"901-2132","addressCountry":"JP"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"01:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"08:00","closes":"01:00"}]}</script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230f6f73'/%3E%3Ccircle cx='50' cy='50' r='30' fill='%23ff6a4d'/%3E%3Ccircle cx='41' cy='42' r='5' fill='%23062c35'/%3E%3Ccircle cx='58' cy='42' r='5' fill='%23062c35'/%3E%3Ccircle cx='50' cy='59' r='5' fill='%23062c35'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#0b2b33;
@@ -23,7 +29,7 @@
     --sand:#fff8ee;
     --cream:#fffdf8;
     --line:rgba(11,43,51,.12);
-    --muted:#5b6f74;
+    --muted:#465d62;
     --shadow:0 18px 44px rgba(6,44,53,.10);
     --r:26px;
     --max:1160px;
@@ -32,7 +38,7 @@
   html{scroll-behavior:smooth;scroll-padding-top:86px}
   body{
     margin:0;
-    font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
     color:var(--ink);
     background:var(--cream);
     line-height:1.85;
@@ -60,7 +66,7 @@
   .brand{display:flex;align-items:center;gap:12px;min-width:0}
   .brand-mark{width:46px;height:46px;flex:none;border-radius:50%;overflow:hidden}
   .brand-name{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;font-size:20px;letter-spacing:.04em;line-height:1.2}
-  .brand-sub{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:9.5px;letter-spacing:.24em;color:var(--teal);font-weight:700}
+  .brand-sub{display:block;font-family:sans-serif;font-size:9.5px;letter-spacing:.24em;color:var(--teal);font-weight:700}
   .nav{display:flex;align-items:center;gap:26px}
   .nav a{font-size:13.5px;font-weight:700;letter-spacing:.04em;position:relative;padding:6px 0}
   .nav a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;background:var(--coral);transform:scaleX(0);transform-origin:right;transition:transform .3s}
@@ -214,12 +220,9 @@
     padding:30px;display:flex;flex-direction:column;justify-content:flex-end;
     color:#fff;isolation:isolate;
   }
-  .scene::before{content:"";position:absolute;inset:0;z-index:-2;transition:transform .5s}
-  .scene:hover::before{transform:scale(1.05)}
+  .scene-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .5s}
+  .scene:hover .scene-photo{transform:scale(1.05)}
   .scene::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(6,44,53,.86) 0%,rgba(6,44,53,.22) 55%,rgba(6,44,53,0) 100%)}
-  .scene-1::before{background:url("images/scene-family.jpg") center 40%/cover no-repeat}
-  .scene-2::before{background:url("images/scene-friends.jpg") center 45%/cover no-repeat}
-  .scene-3::before{background:url("images/scene-group.jpg") center 30%/cover no-repeat}
   .scene .scene-tag{font-size:10.5px;letter-spacing:.2em;font-weight:700;opacity:.92;margin-bottom:auto}
   .scene h3{font-size:22px;margin-bottom:8px}
   .scene p{font-size:13px;line-height:1.85;color:rgba(255,255,255,.88)}
@@ -262,7 +265,7 @@
   tbody tr:last-child td{border-bottom:0}
   tbody th{font-weight:700;white-space:normal}
   td.price{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;font-size:16px;color:var(--teal)}
-  td.price small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;font-size:11px;color:var(--muted)}
+  td.price small{font-family:sans-serif;font-weight:500;font-size:11px;color:var(--muted)}
   .pack-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:26px}
   .pack{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px}
   .pack p{font-size:13px;font-weight:700;line-height:1.6}
@@ -313,7 +316,7 @@
   }
   .event-day small{display:block;font-size:10px;letter-spacing:.06em;color:var(--muted);font-weight:700}
   .event-day b{display:block;font-family:"Zen Maru Gothic",sans-serif;font-size:19px;line-height:1.3;color:var(--coral)}
-  .event-item h4{font-size:14.5px;line-height:1.6;font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif}
+  .event-item h4{font-size:14.5px;line-height:1.6;font-weight:700;font-family:sans-serif}
   .event-item p{font-size:11.5px;color:var(--muted);margin-top:2px}
   .event-side{display:grid;gap:18px}
   .side-card{border-radius:26px;padding:30px;color:#fff;position:relative;overflow:hidden}
@@ -329,7 +332,7 @@
   .info-list{display:grid;gap:16px}
   .info-row{display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px}
   .info-row .ico{flex:none;width:42px;height:42px;border-radius:13px;background:#e8fbfa;display:grid;place-items:center;color:var(--teal)}
-  .info-row h4{font-size:12px;letter-spacing:.08em;color:var(--muted);font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;margin-bottom:3px}
+  .info-row h4{font-size:12px;letter-spacing:.08em;color:var(--muted);font-family:sans-serif;font-weight:700;margin-bottom:3px}
   .info-row p{font-size:13.5px;line-height:1.8}
   .info-row p b{font-size:15px}
   .map-card{border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff}
@@ -383,7 +386,7 @@
   .footer-brand .brand-sub{color:var(--aqua)}
   .footer-brand p{margin-top:14px;font-size:12.5px;line-height:1.95}
   .footer-links{display:flex;gap:44px;flex-wrap:wrap}
-  .footer-links h4{font-size:11px;letter-spacing:.18em;color:var(--sun);margin-bottom:12px;font-family:"Zen Kaku Gothic New",sans-serif}
+  .footer-links h4{font-size:11px;letter-spacing:.18em;color:var(--sun);margin-bottom:12px;font-family:sans-serif}
   .footer-links li{margin-bottom:7px;font-size:12.5px}
   .footer-links a:hover{color:#fff;text-decoration:underline}
   .footer-bottom{padding-top:24px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:11.5px;color:rgba(255,255,255,.5)}
@@ -401,7 +404,8 @@
   .mobile-cta .m-tel{background:var(--coral);color:#fff}
 
   /* reveal */
-  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease}
+  .reveal{transition:opacity .7s ease, transform .7s ease}
+  .reveal.is-pending{opacity:0;transform:translateY(26px)}
   .reveal.in{opacity:1;transform:none}
 
   /* ---------- responsive ---------- */
@@ -475,7 +479,7 @@
     tbody tr + tr{border-top:1px solid var(--line)}
     tbody th{display:block;padding:0 0 8px;border:0;font-size:14px;white-space:normal}
     td{display:block;padding:5px 0;border:0;white-space:normal;text-align:right;line-height:1.7}
-    td::before{content:attr(data-label);float:left;max-width:68%;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.02em;color:var(--muted);text-align:left}
+    td::before{content:attr(data-label);float:left;max-width:68%;font-family:sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.02em;color:var(--muted);text-align:left}
     td::after{content:"";display:block;clear:both}
     td.price{font-size:15px}
     td.price small{font-size:10.5px}
@@ -491,10 +495,15 @@
   }
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
-    .reveal{opacity:1;transform:none;transition:none}
+    .reveal, .reveal.is-pending{opacity:1;transform:none;transition:none}
     .ticker-track{animation:none}
     *{transition-duration:.01ms !important}
   }
+  .card p, .scene p, .early p, .price-note p, .pack p, .floor li, .event-item p, .side-card p, .info-row p, details .answer, .cta-inner p, .footer-brand p, .footer-links li {font-size:14px}
+  .fine, .pack span, td.price small, .photo-note, .hours-note, .footer-bottom, .cta-call small, td::before {font-size:12px}
+  .event-notice, .scene-note {font-size:14px;color:var(--muted);margin:0 0 20px}
+  .event-notice a {text-decoration:underline}
+  .hours-note {color:var(--muted)}
 </style>
 </head>
 <body>
@@ -519,6 +528,7 @@
       <a href="#facility">施設案内</a>
       <a href="#events">大会・イベント</a>
       <a href="#access">アクセス</a>
+      <a href="#faq">よくあるご質問</a>
     </nav>
     <a class="header-tel" href="tel:0988745555">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -533,7 +543,7 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow">Urasoe, Okinawa — Since 2010</span>
+        <span class="eyebrow">Urasoe, Okinawa</span>
         <h1>きょうは、<br><em>転がして</em>笑おう。</h1>
         <p class="hero-lead">
           浦添のてだこボウルは、<strong>36レーン・2フロア</strong>のビッグな遊び場。
@@ -550,14 +560,14 @@
           <li><span class="dot"></span>年中無休</li>
           <li><span class="dot"></span>駐車場130台</li>
           <li><span class="dot"></span>個室レーン10本</li>
-          <li><span class="dot"></span>朝8時から営業</li>
+          <li><span class="dot"></span>土日祝は朝8時から営業</li>
         </ul>
       </div>
 
       <div class="hero-art">
         <div class="hero-photo">
-          <img class="hero-photo-main" src="images/lane.jpg" alt="木目のボウリングレーンに並ぶピン">
-          <img class="hero-photo-sub" src="images/scene-family.jpg" alt="親子でボウリングを楽しむ様子">
+          <img class="hero-photo-main" src="images/lane-800.webp" srcset="images/lane-800.webp 800w, images/lane-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 50vw" alt="木目のボウリングレーンに並ぶピン" width="1200" height="1797" fetchpriority="high">
+          <img class="hero-photo-sub" src="images/scene-family-800.webp" srcset="images/scene-family-800.webp 800w, images/scene-family-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 50vw" alt="親子でボウリングを楽しむ様子" width="1200" height="800" loading="lazy">
           <svg class="hero-flower" viewBox="0 0 120 120" aria-hidden="true">
             <g transform="translate(60 60)">
               <g fill="#ff6a4d">
@@ -601,8 +611,8 @@
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M3 21h18"/><path d="M7 21v-6h4v6"/><path d="M14 15h3"/></svg>
           </div>
           <span class="num">01</span>
-          <h3>沖縄でここだけ。<br>2フロア・36レーン</h3>
-          <p>2階と4階、合わせて36レーンの大型施設。大人数のグループでも待たされにくく、フロアを分けて思い思いに楽しめます。</p>
+          <h3>2フロアに広がる<br>36レーン</h3>
+          <p>2階と4階、合わせて36レーンの大型施設。家族やグループでボウリングを楽しめます。</p>
         </article>
         <article class="card reveal">
           <div class="card-icon">
@@ -625,7 +635,7 @@
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
           </div>
           <span class="num">04</span>
-          <h3>朝8時から翌1時まで。<br>年中無休で営業</h3>
+          <h3>朝から翌1時まで。<br>年中無休で営業</h3>
           <p>平日は9時、土日祝は8時オープン。仕事帰りにも、休日の朝にも。空いた時間をすぐ遊びに変えられるのがうれしい。</p>
         </article>
       </div>
@@ -640,20 +650,24 @@
         <h2>だれと行く？<br>今日のシーンで選ぶ。</h2>
         <p>同じ36レーンでも、楽しみ方はいろいろ。集まる人数と気分に合わせて、ぴったりの過ごし方を見つけてください。</p>
       </div>
+      <p class="scene-note">※写真はイメージです。</p>
       <div class="scenes">
         <article class="scene scene-1 reveal">
+          <img class="scene-photo" src="images/scene-family-800.webp" srcset="images/scene-family-800.webp 800w, images/scene-family-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 33vw" width="1200" height="800" loading="lazy" alt="親子でボウリングを楽しむイメージ">
           <span class="scene-tag">FAMILY</span>
           <span class="scene-emoji" aria-hidden="true">👨‍👩‍👧</span>
           <h3>家族で、はじめての<br>ボウリングデビュー</h3>
           <p>ノーガターレーンなら小さな子でも安心。幼児（6歳以下）は貸靴代も無料です。家族の記念日にも。</p>
         </article>
         <article class="scene scene-2 reveal">
+          <img class="scene-photo" src="images/scene-friends-800.webp" srcset="images/scene-friends-800.webp 800w, images/scene-friends-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 33vw" width="1200" height="800" loading="lazy" alt="友人同士でボウリングを楽しむイメージ">
           <span class="scene-tag">FRIENDS</span>
           <span class="scene-emoji" aria-hidden="true">🎳</span>
           <h3>友だちと、<br>本気のスコア勝負</h3>
           <p>2フロア36レーンだから、大人数でもまとめて遊べる。12ゲームパックで、とことん投げ込むのもあり。</p>
         </article>
         <article class="scene scene-3 reveal">
+          <img class="scene-photo" src="images/scene-group-800.webp" srcset="images/scene-group-800.webp 800w, images/scene-group-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 33vw" width="1200" height="800" loading="lazy" alt="グループでボウリングを楽しむイメージ">
           <span class="scene-tag">GROUP</span>
           <span class="scene-emoji" aria-hidden="true">🎉</span>
           <h3>サークル・職場・<br>パーティー利用に</h3>
@@ -795,6 +809,7 @@
       </div>
 
       <ul class="fine">
+        <li>「メイト」「ロッカー」は店舗の料金区分です。対象条件や入会・利用方法は店舗へお問い合わせください。</li>
         <li>表示料金は税込です。年末年始・ゴールデンウィーク期間は営業時間および料金体系が異なる場合があります。</li>
         <li>シニアは男性60歳以上・女性55歳以上、学生は大学・専門学校以下が対象です。幼児は6歳以下（貸靴無料）。</li>
         <li>上記は店頭の料金表に基づく目安です。ご予約時の料金とは異なる場合があるため、詳しくはお電話でご確認ください。</li>
@@ -812,15 +827,15 @@
       </div>
       <div class="photo-band">
         <figure class="reveal">
-          <img src="images/lane.jpg" alt="木目のレーンに並ぶボウリングのピン" loading="lazy">
+          <img src="images/lane-800.webp" srcset="images/lane-800.webp 800w, images/lane-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 50vw" alt="木目のレーンに並ぶボウリングのピン" loading="lazy" width="1200" height="1797">
           <figcaption><span>36 LANES / 2 FLOORS</span>広いレーンで、思いきり。</figcaption>
         </figure>
         <figure class="reveal">
-          <img src="images/balls.jpg" alt="ボールリターンに並ぶカラフルなボウリングボール" loading="lazy">
+          <img src="images/balls-800.webp" srcset="images/balls-800.webp 800w, images/balls-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 50vw" alt="ボールリターンに並ぶカラフルなボウリングボール" loading="lazy" width="1200" height="801">
           <figcaption><span>RENTAL</span>ボールは無料で貸し出し。</figcaption>
         </figure>
         <figure class="reveal">
-          <img src="images/shoes.jpg" alt="レーンの上に置かれたボウリングシューズとボール" loading="lazy">
+          <img src="images/shoes-800.webp" srcset="images/shoes-800.webp 800w, images/shoes-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 50vw" alt="レーンの上に置かれたボウリングシューズとボール" loading="lazy" width="1200" height="800">
           <figcaption><span>SHOES</span>貸しシューズ 1足320円。</figcaption>
         </figure>
       </div>
@@ -859,7 +874,7 @@
             <li>モバイル修理ラボ</li>
             <li>貸し会議室</li>
           </ul>
-          <span class="floor-tag">待ち時間にも</span>
+
         </article>
         <article class="floor reveal">
           <div class="floor-no">1F<span>FLOOR</span></div>
@@ -882,6 +897,7 @@
         <h2>うまくなっても、<br>ならなくても、参加OK。</h2>
         <p>毎月、初心者から常連さんまで楽しめる大会・月例会を開催しています。観戦だけでも、見学だけでも歓迎です。</p>
       </div>
+      <p class="event-notice">次回日程・参加費・申込方法は変更される場合があります。店頭または<a href="tel:0988745555">お電話（098-874-5555）</a>でご確認ください。</p>
       <div class="event-layout">
         <div class="event-list reveal">
           <div class="event-item">
@@ -972,7 +988,7 @@
             </span>
             <div>
               <h4>OPEN</h4>
-              <p>月〜金 9:00〜翌1:00<br>土・日・祝 8:00〜翌1:00<br><span style="font-size:12px;color:var(--muted)">年中無休（年末年始・GWは変動あり）</span></p>
+              <p>月〜金 9:00〜翌1:00<br>土・日・祝 8:00〜翌1:00<br><span class="hours-note">年中無休（年末年始・GWは変動あり）</span></p>
             </div>
           </div>
           <div class="info-row reveal">
@@ -1000,7 +1016,7 @@
   </section>
 
   <!-- FAQ -->
-  <section class="section">
+  <section class="section" id="faq">
     <div class="container">
       <div class="section-head center reveal">
         <span class="kicker">FAQ</span>
@@ -1064,6 +1080,7 @@
             <li><a href="#facility">施設案内</a></li>
             <li><a href="#events">大会・イベント</a></li>
             <li><a href="#access">アクセス</a></li>
+            <li><a href="#faq">よくあるご質問</a></li>
           </ul>
         </div>
         <div>
@@ -1110,16 +1127,17 @@
 
   // scroll reveal
   const items = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('in');
+          entry.target.classList.remove('is-pending');
           io.unobserve(entry.target);
         }
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     items.forEach((el, i) => {
+      if (el.getBoundingClientRect().top > window.innerHeight) el.classList.add('is-pending');
       el.style.transitionDelay = (i % 4) * 60 + 'ms';
       io.observe(el);
     });
