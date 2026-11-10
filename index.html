@@ -3,1129 +3,514 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>てだこボウル｜沖縄・浦添 36レーン2フロアのボウリング場</title>
-<meta name="description" content="沖縄県浦添市のてだこボウル。36レーン・2フロア、個室レーン10本、ノーガターレーンを備えた年中無休のボウリング場。朝8時〜10時は1ゲーム100円、駐車場130台。家族でも仲間とも、朝から翌1時まで思いきり遊べます。">
-<meta property="og:title" content="てだこボウル｜沖縄・浦添 36レーン2フロアのボウリング場">
-<meta property="og:description" content="きょうは、転がして笑おう。浦添の36レーンで、家族も仲間も大あばれ。朝得1ゲーム100円・駐車場130台・年中無休。">
+<meta name="theme-color" content="#ffffff">
+<title>てだこボウル｜沖縄県浦添市のボウリング場</title>
+<meta name="description" content="沖縄県浦添市伊祖のボウリング場、てだこボウル。2階・4階に計36レーン、個室レーン10本、ノーガターレーン、駐車場130台。営業時間、料金、施設案内をご確認いただけます。">
+<meta property="og:title" content="てだこボウル｜沖縄県浦添市のボウリング場">
+<meta property="og:description" content="沖縄県浦添市伊祖のボウリング場、てだこボウル。36レーン、個室レーン10本、駐車場130台。">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230f6f73'/%3E%3Ccircle cx='50' cy='50' r='30' fill='%23ff6a4d'/%3E%3Ccircle cx='41' cy='42' r='5' fill='%23062c35'/%3E%3Ccircle cx='58' cy='42' r='5' fill='%23062c35'/%3E%3Ccircle cx='50' cy='59' r='5' fill='%23062c35'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<meta property="og:site_name" content="てだこボウル">
+<meta property="og:locale" content="ja_JP">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BowlingAlley",
+  "name": "てだこボウル",
+  "description": "沖縄県浦添市伊祖にあるボウリング場。2階・4階に各18レーン、個室レーン10本、ノーガターレーンを備えています。",
+  "telephone": "+81-98-874-5555",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "901-2132",
+    "addressRegion": "沖縄県",
+    "addressLocality": "浦添市",
+    "streetAddress": "伊祖2-9-2",
+    "addressCountry": "JP"
+  },
+  "sameAs": [
+    "https://tedakobowl.com/",
+    "https://www.instagram.com/tedako_bowl",
+    "https://www.facebook.com/tedakobowl2"
+  ]
+}
+</script>
 <style>
-  :root{
-    --ink:#0b2b33;
-    --deep:#062c35;
-    --teal:#0f6f73;
-    --aqua:#2fc4c4;
-    --coral:#ff6a4d;
-    --sun:#ffc247;
-    --sand:#fff8ee;
-    --cream:#fffdf8;
-    --line:rgba(11,43,51,.12);
-    --muted:#5b6f74;
-    --shadow:0 18px 44px rgba(6,44,53,.10);
-    --r:26px;
-    --max:1160px;
-  }
-  *,*::before,*::after{box-sizing:border-box}
-  html{scroll-behavior:smooth;scroll-padding-top:86px}
-  body{
-    margin:0;
-    font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
-    color:var(--ink);
-    background:var(--cream);
-    line-height:1.85;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  h1,h2,h3,h4{font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;line-height:1.35;margin:0;font-weight:900;letter-spacing:.01em}
-  p{margin:0}
-  a{color:inherit;text-decoration:none}
-  img,svg{display:block;max-width:100%}
-  ul{margin:0;padding:0;list-style:none}
-  .container{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:24px}
-  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-
-  /* ---------- header ---------- */
-  .site-header{
-    position:sticky;top:0;z-index:60;
-    background:rgba(255,253,248,.88);
-    backdrop-filter:blur(14px);
-    border-bottom:1px solid transparent;
-    transition:border-color .3s, box-shadow .3s;
-  }
-  .site-header.is-scrolled{border-bottom-color:var(--line);box-shadow:0 10px 30px rgba(6,44,53,.07)}
-  .header-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;height:78px}
-  .brand{display:flex;align-items:center;gap:12px;min-width:0}
-  .brand-mark{width:46px;height:46px;flex:none;border-radius:50%;overflow:hidden}
-  .brand-name{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;font-size:20px;letter-spacing:.04em;line-height:1.2}
-  .brand-sub{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-size:9.5px;letter-spacing:.24em;color:var(--teal);font-weight:700}
-  .nav{display:flex;align-items:center;gap:26px}
-  .nav a{font-size:13.5px;font-weight:700;letter-spacing:.04em;position:relative;padding:6px 0}
-  .nav a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;background:var(--coral);transform:scaleX(0);transform-origin:right;transition:transform .3s}
-  .nav a:hover::after{transform:scaleX(1);transform-origin:left}
-  .header-tel{
-    display:inline-flex;align-items:center;gap:8px;
-    background:var(--deep);color:#fff;font-weight:700;font-size:13.5px;
-    padding:12px 18px;border-radius:99px;white-space:nowrap;
-    transition:transform .2s, background .2s;
-  }
-  .header-tel:hover{transform:translateY(-2px);background:var(--teal)}
-  .nav-toggle{display:none;width:46px;height:46px;border:1px solid var(--line);background:#fff;border-radius:14px;align-items:center;justify-content:center;cursor:pointer}
-  .nav-toggle span{display:block;width:20px;height:2px;background:var(--ink);position:relative;transition:.25s}
-  .nav-toggle span::before,.nav-toggle span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--ink);transition:.25s}
-  .nav-toggle span::before{top:-6px}
-  .nav-toggle span::after{top:6px}
-  .nav-toggle[aria-expanded="true"] span{background:transparent}
-  .nav-toggle[aria-expanded="true"] span::before{top:0;transform:rotate(45deg)}
-  .nav-toggle[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg)}
-
-  /* ---------- hero ---------- */
-  .hero{
-    position:relative;isolation:isolate;overflow:hidden;
-    color:#fff;
-    background:
-      radial-gradient(120% 85% at 88% 6%, rgba(255,138,92,.95) 0%, rgba(255,138,92,0) 46%),
-      radial-gradient(90% 70% at 6% 96%, rgba(47,196,196,.55) 0%, rgba(47,196,196,0) 55%),
-      linear-gradient(155deg,#052a33 0%,#083a42 52%,#0a5457 100%);
-    padding:74px 0 96px;
-  }
-  .hero::after{
-    content:"";position:absolute;inset:auto 0 -1px 0;height:70px;z-index:2;
-    background:var(--cream);
-    clip-path:polygon(0 100%,0 55%,12% 44%,26% 62%,42% 38%,58% 58%,74% 34%,88% 52%,100% 40%,100% 100%);
-    opacity:.98;
-  }
-  .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:40px;align-items:center;position:relative;z-index:1}
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:10px;
-    font-size:11px;letter-spacing:.28em;font-weight:700;text-transform:uppercase;
-    color:var(--sun);
-  }
-  .eyebrow::before{content:"";width:30px;height:1px;background:currentColor}
-  .hero h1{
-    font-size:clamp(38px,5.6vw,66px);
-    line-height:1.22;letter-spacing:.02em;margin:18px 0 22px;
-    text-shadow:0 4px 30px rgba(0,0,0,.18);
-  }
-  .hero h1 em{
-    font-style:normal;position:relative;display:inline-block;color:var(--sun);
-  }
-  .hero h1 em::after{
-    content:"";position:absolute;left:0;right:0;bottom:6px;height:10px;z-index:-1;
-    background:rgba(255,106,77,.65);border-radius:99px;
-  }
-  .hero-lead{max-width:34em;font-size:15.5px;line-height:2;color:rgba(255,255,255,.86)}
-  .hero-lead strong{color:#fff;background:linear-gradient(transparent 62%,rgba(255,194,71,.42) 62%)}
-  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
-  .btn{
-    display:inline-flex;align-items:center;justify-content:center;gap:9px;
-    font-weight:700;font-size:15px;padding:16px 28px;border-radius:99px;
-    transition:transform .2s, box-shadow .2s, background .2s, color .2s;
-    border:1.5px solid transparent;cursor:pointer;
-  }
-  .btn:hover{transform:translateY(-3px)}
-  .btn-primary{background:var(--coral);color:#fff;box-shadow:0 14px 30px rgba(255,106,77,.35)}
-  .btn-primary:hover{background:#ff7d63}
-  .btn-ghost{border-color:rgba(255,255,255,.45);color:#fff}
-  .btn-ghost:hover{background:rgba(255,255,255,.12)}
-  .btn-dark{background:var(--deep);color:#fff}
-  .btn-dark:hover{background:var(--teal)}
-  .hero-facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:34px;font-size:12.5px;font-weight:700;color:rgba(255,255,255,.9)}
-  .hero-facts li{display:flex;align-items:center;gap:7px}
-  .dot{width:7px;height:7px;border-radius:50%;background:var(--sun);flex:none}
-  .hero-art{position:relative}
-  .hero-photo{position:relative;width:min(100%,500px);aspect-ratio:1;margin-inline:auto}
-  .hero-photo-main{
-    width:100%;height:100%;object-fit:cover;object-position:center 58%;
-    border-radius:50%;border:8px solid rgba(255,248,238,.94);
-    box-shadow:0 34px 60px rgba(0,0,0,.38);
-  }
-  .hero-photo-sub{
-    position:absolute;left:-6px;bottom:24px;
-    width:134px;height:134px;border-radius:50%;object-fit:cover;
-    border:6px solid #fff8ee;box-shadow:0 18px 36px rgba(0,0,0,.32);
-  }
-  .hero-flower{
-    position:absolute;top:6px;left:10px;width:56px;height:56px;
-    transform:rotate(-14deg);filter:drop-shadow(0 8px 14px rgba(0,0,0,.28));
-  }
-  .hero-badge{
-    position:absolute;right:-6px;bottom:12px;
-    background:#fff;color:var(--ink);
-    border-radius:22px;padding:18px 22px 16px;text-align:center;
-    box-shadow:0 22px 44px rgba(0,0,0,.25);
-    transform:rotate(-4deg);
-    border:1px solid rgba(255,255,255,.6);
-  }
-  .hero-badge small{display:block;font-size:10px;letter-spacing:.18em;color:var(--coral);font-weight:700}
-  .hero-badge b{display:block;font-family:"Zen Maru Gothic",sans-serif;font-size:15px;line-height:1.5;margin-top:4px}
-  .hero-badge strong{font-size:30px;line-height:1;color:var(--teal);letter-spacing:-.02em}
-  .hero-badge strong span{font-size:15px}
-
-  /* ---------- ticker ---------- */
-  .ticker{background:var(--sun);color:var(--deep);overflow:hidden;border-bottom:1px solid rgba(6,44,53,.08)}
-  .ticker-track{display:flex;width:max-content;animation:slide 34s linear infinite}
-  .ticker-track span{
-    display:inline-flex;align-items:center;gap:22px;
-    padding:13px 22px;font-family:"Zen Maru Gothic",sans-serif;
-    font-size:13px;font-weight:700;letter-spacing:.14em;white-space:nowrap;
-  }
-  .ticker-track span::after{content:"✦";color:var(--coral);font-size:12px}
-  @keyframes slide{to{transform:translateX(-50%)}}
-
-  /* ---------- sections ---------- */
-  .section{padding:92px 0;position:relative}
-  .section-sand{background:var(--sand)}
-  .section-head{max-width:720px;margin-bottom:48px}
-  .section-head.center{margin-inline:auto;text-align:center}
-  .kicker{font-size:11px;letter-spacing:.26em;font-weight:700;color:var(--coral);text-transform:uppercase;display:block;margin-bottom:10px}
-  .section-head h2{font-size:clamp(27px,3.6vw,40px);line-height:1.4}
-  .section-head p{margin-top:16px;color:var(--muted);font-size:14.5px;line-height:1.95}
-  .section-head.center p{margin-inline:auto}
-
-  /* cards */
-  .cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
-  .card{
-    background:#fff;border:1px solid var(--line);border-radius:var(--r);
-    padding:30px 26px;box-shadow:0 10px 30px rgba(6,44,53,.05);
-    transition:transform .3s, box-shadow .3s;
-  }
-  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
-  .card-icon{
-    width:56px;height:56px;border-radius:18px;display:grid;place-items:center;
-    background:linear-gradient(150deg,#e8fbfa,#d4f5f2);color:var(--teal);margin-bottom:18px;
-  }
-  .card:nth-child(2) .card-icon{background:linear-gradient(150deg,#fff0e9,#ffe0d4);color:var(--coral)}
-  .card:nth-child(3) .card-icon{background:linear-gradient(150deg,#fff7dd,#ffedb8);color:#b1800e}
-  .card:nth-child(4) .card-icon{background:linear-gradient(150deg,#eef3ff,#dfe8ff);color:#3d5bb3}
-  .card h3{font-size:19px;line-height:1.55;margin-bottom:10px}
-  .card p{font-size:13.5px;color:var(--muted);line-height:1.9}
-  .card .num{
-    display:inline-block;font-family:"Zen Maru Gothic",sans-serif;font-weight:900;
-    font-size:12px;letter-spacing:.1em;color:var(--teal);margin-bottom:8px;
-  }
-
-  /* scenes */
-  .scenes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-  .scene{
-    position:relative;overflow:hidden;border-radius:28px;min-height:280px;
-    padding:30px;display:flex;flex-direction:column;justify-content:flex-end;
-    color:#fff;isolation:isolate;
-  }
-  .scene::before{content:"";position:absolute;inset:0;z-index:-2;transition:transform .5s}
-  .scene:hover::before{transform:scale(1.05)}
-  .scene::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(6,44,53,.86) 0%,rgba(6,44,53,.22) 55%,rgba(6,44,53,0) 100%)}
-  .scene-1::before{background:url("images/scene-family.jpg") center 40%/cover no-repeat}
-  .scene-2::before{background:url("images/scene-friends.jpg") center 45%/cover no-repeat}
-  .scene-3::before{background:url("images/scene-group.jpg") center 30%/cover no-repeat}
-  .scene .scene-tag{font-size:10.5px;letter-spacing:.2em;font-weight:700;opacity:.92;margin-bottom:auto}
-  .scene h3{font-size:22px;margin-bottom:8px}
-  .scene p{font-size:13px;line-height:1.85;color:rgba(255,255,255,.88)}
-  .scene .scene-emoji{
-    position:absolute;top:26px;right:26px;width:64px;height:64px;border-radius:50%;
-    background:rgba(255,255,255,.16);backdrop-filter:blur(6px);
-    display:grid;place-items:center;font-size:30px;
-  }
-
-  /* price */
-  .price-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:24px;align-items:stretch;margin-bottom:32px}
-  .early{
-    position:relative;overflow:hidden;border-radius:28px;padding:34px 32px;color:#fff;
-    background:radial-gradient(120% 100% at 90% 0%,#ff9a5c,#ff6a4d 45%,#d1391f 100%);
-    box-shadow:0 20px 46px rgba(209,57,31,.28);
-    display:flex;flex-direction:column;justify-content:center;
-  }
-  .early::after{content:"";position:absolute;right:-40px;bottom:-50px;width:180px;height:180px;border-radius:50%;border:26px solid rgba(255,255,255,.12)}
-  .early .early-label{font-size:11px;letter-spacing:.22em;font-weight:700;opacity:.95}
-  .early h3{font-size:24px;margin:10px 0 6px;line-height:1.5}
-  .early .big{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;font-size:64px;line-height:1.05;letter-spacing:-.03em;margin:6px 0 2px}
-  .early .big span{font-size:20px;letter-spacing:0}
-  .early p{font-size:12.5px;line-height:1.85;opacity:.94;position:relative;z-index:1}
-  .price-note{
-    background:#fff;border:1px solid var(--line);border-radius:28px;padding:32px;
-    display:flex;flex-direction:column;justify-content:center;gap:14px;
-  }
-  .price-note h3{font-size:19px;line-height:1.6}
-  .price-note p{font-size:13.5px;color:var(--muted);line-height:1.95}
-  .price-note .btn{align-self:flex-start;padding:12px 22px;font-size:13.5px}
-  .table-wrap{background:#fff;border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);overflow:hidden;margin-bottom:22px}
-  .table-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 28px;border-bottom:1px solid var(--line);flex-wrap:wrap}
-  .table-head h3{font-size:19px}
-  .table-head .tag{font-size:11.5px;font-weight:700;color:var(--teal);background:#e8fbfa;padding:6px 12px;border-radius:99px}
-  .table-head .tag.weekend{color:#b34a2c;background:#fff0e9}
-  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-  table{width:100%;border-collapse:collapse;min-width:560px;font-size:13.5px}
-  th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
-  thead th{background:#f7fbfa;font-size:12px;letter-spacing:.04em;color:var(--muted);font-weight:700}
-  tbody tr:last-child td{border-bottom:0}
-  tbody th{font-weight:700;white-space:normal}
-  td.price{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;font-size:16px;color:var(--teal)}
-  td.price small{font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;font-size:11px;color:var(--muted)}
-  .pack-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:26px}
-  .pack{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-  .pack p{font-size:13px;font-weight:700;line-height:1.6}
-  .pack span{display:block;font-size:11px;color:var(--muted);font-weight:500;margin-top:2px}
-  .pack b{font-family:"Zen Maru Gothic",sans-serif;font-size:24px;color:var(--coral);white-space:nowrap}
-  .fine{font-size:11.5px;color:var(--muted);line-height:1.9;margin-top:22px}
-  .fine li{padding-left:1.1em;position:relative}
-  .fine li::before{content:"※";position:absolute;left:0}
-
-  /* gallery */
-  .photo-band{
-    display:grid;grid-template-columns:1.5fr 1fr;grid-template-rows:200px 200px;
-    gap:14px;margin-bottom:14px;
-  }
-  .photo-band figure{margin:0;position:relative;overflow:hidden;border-radius:22px;background:#0a3a40}
-  .photo-band figure:first-child{grid-row:span 2}
-  .photo-band img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
-  .photo-band figure:hover img{transform:scale(1.04)}
-  .photo-band figcaption{
-    position:absolute;left:0;right:0;bottom:0;padding:34px 20px 16px;
-    background:linear-gradient(to top,rgba(4,36,43,.82),rgba(4,36,43,0));
-    color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.02em;
-  }
-  .photo-band figcaption span{display:block;font-size:10px;letter-spacing:.16em;opacity:.7;font-weight:500}
-  .photo-note{font-size:11px;color:var(--muted);text-align:right;margin-bottom:38px}
-
-  /* facility */
-  .floors{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
-  .floor{
-    background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px 24px;
-    position:relative;overflow:hidden;transition:transform .3s, box-shadow .3s;
-  }
-  .floor:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-  .floor .floor-no{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;font-size:38px;line-height:1;color:var(--teal);letter-spacing:-.02em}
-  .floor .floor-no span{font-size:15px;margin-left:2px;color:var(--coral)}
-  .floor h3{font-size:15px;margin:12px 0 12px;line-height:1.6}
-  .floor li{font-size:12.5px;color:var(--muted);line-height:1.85;padding-left:1em;position:relative}
-  .floor li::before{content:"";position:absolute;left:0;top:.75em;width:5px;height:5px;border-radius:50%;background:var(--aqua)}
-  .floor .floor-tag{display:inline-block;margin-top:14px;font-size:10.5px;font-weight:700;color:var(--teal);background:#e8fbfa;border-radius:99px;padding:4px 10px}
-
-  /* events */
-  .event-layout{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:26px;align-items:start}
-  .event-list{background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 10px 30px rgba(6,44,53,.05)}
-  .event-item{display:flex;align-items:center;gap:18px;padding:20px 26px;border-bottom:1px solid var(--line)}
-  .event-item:last-child{border-bottom:0}
-  .event-day{
-    flex:none;width:64px;text-align:center;background:var(--sand);border-radius:16px;padding:8px 4px;
-  }
-  .event-day small{display:block;font-size:10px;letter-spacing:.06em;color:var(--muted);font-weight:700}
-  .event-day b{display:block;font-family:"Zen Maru Gothic",sans-serif;font-size:19px;line-height:1.3;color:var(--coral)}
-  .event-item h4{font-size:14.5px;line-height:1.6;font-weight:700;font-family:"Zen Kaku Gothic New",sans-serif}
-  .event-item p{font-size:11.5px;color:var(--muted);margin-top:2px}
-  .event-side{display:grid;gap:18px}
-  .side-card{border-radius:26px;padding:30px;color:#fff;position:relative;overflow:hidden}
-  .side-card.teal{background:linear-gradient(150deg,#0d7d80,#06474d)}
-  .side-card.sun{background:linear-gradient(150deg,#ffd477,#ffb02e);color:#4a2f00}
-  .side-card h3{font-size:19px;margin-bottom:10px;line-height:1.55}
-  .side-card p{font-size:13px;line-height:1.9;opacity:.94}
-  .side-card .side-label{font-size:10px;letter-spacing:.2em;font-weight:700;margin-bottom:10px;display:block;opacity:.85}
-  .side-card .arrow{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:12.5px;font-weight:700;border-bottom:1px solid currentColor;padding-bottom:2px}
-
-  /* access */
-  .access-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:34px;align-items:start}
-  .info-list{display:grid;gap:16px}
-  .info-row{display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px}
-  .info-row .ico{flex:none;width:42px;height:42px;border-radius:13px;background:#e8fbfa;display:grid;place-items:center;color:var(--teal)}
-  .info-row h4{font-size:12px;letter-spacing:.08em;color:var(--muted);font-family:"Zen Kaku Gothic New",sans-serif;font-weight:700;margin-bottom:3px}
-  .info-row p{font-size:13.5px;line-height:1.8}
-  .info-row p b{font-size:15px}
-  .map-card{border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:#fff}
-  .map-card iframe{width:100%;height:330px;border:0;display:block;filter:saturate(1.05)}
-  .map-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 22px;flex-wrap:wrap}
-  .map-foot p{font-size:12px;color:var(--muted)}
-  .map-foot .btn{padding:11px 20px;font-size:12.5px}
-
-  /* faq */
-  .faq{max-width:820px;margin-inline:auto}
-  details{background:#fff;border:1px solid var(--line);border-radius:18px;margin-bottom:12px;overflow:hidden}
-  details[open]{box-shadow:0 10px 30px rgba(6,44,53,.06)}
-  summary{
-    cursor:pointer;list-style:none;padding:20px 54px 20px 24px;font-weight:700;font-size:14.5px;
-    position:relative;line-height:1.7;
-  }
-  summary::-webkit-details-marker{display:none}
-  summary::after{
-    content:"";position:absolute;right:24px;top:50%;width:10px;height:10px;
-    border-right:2px solid var(--coral);border-bottom:2px solid var(--coral);
-    transform:translateY(-70%) rotate(45deg);transition:transform .25s;
-  }
-  details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
-  details .answer{padding:0 24px 22px;font-size:13.5px;color:var(--muted);line-height:1.95}
-
-  /* cta */
-  .cta-band{
-    position:relative;overflow:hidden;color:#fff;
-    background:
-      radial-gradient(80% 120% at 90% 10%, rgba(255,106,77,.85), rgba(255,106,77,0) 55%),
-      radial-gradient(70% 90% at 0% 100%, rgba(47,196,196,.5), rgba(47,196,196,0) 60%),
-      linear-gradient(150deg,#062c35,#0a4a4f);
-    padding:74px 0;
-  }
-  .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
-  .cta-inner h2{font-size:clamp(26px,3.6vw,38px);line-height:1.45}
-  .cta-inner p{font-size:13.5px;color:rgba(255,255,255,.8);margin-top:10px}
-  .cta-call{text-align:right}
-  .cta-call .tel-label{font-size:10px;letter-spacing:.24em;color:var(--sun);font-weight:700}
-  .cta-call a.tel{
-    display:block;font-family:"Zen Maru Gothic",sans-serif;font-weight:900;
-    font-size:clamp(30px,4.6vw,44px);line-height:1.2;letter-spacing:.01em;
-  }
-  .cta-call a.tel:hover{color:var(--sun)}
-  .cta-call small{display:block;font-size:11.5px;color:rgba(255,255,255,.65);margin-top:4px}
-
-  /* footer */
-  .site-footer{background:#04242b;color:rgba(255,255,255,.72);padding:56px 0 100px;font-size:13px}
-  .footer-grid{display:flex;justify-content:space-between;gap:36px;flex-wrap:wrap;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.12)}
-  .footer-brand .brand-name{color:#fff;font-size:22px}
-  .footer-brand .brand-sub{color:var(--aqua)}
-  .footer-brand p{margin-top:14px;font-size:12.5px;line-height:1.95}
-  .footer-links{display:flex;gap:44px;flex-wrap:wrap}
-  .footer-links h4{font-size:11px;letter-spacing:.18em;color:var(--sun);margin-bottom:12px;font-family:"Zen Kaku Gothic New",sans-serif}
-  .footer-links li{margin-bottom:7px;font-size:12.5px}
-  .footer-links a:hover{color:#fff;text-decoration:underline}
-  .footer-bottom{padding-top:24px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:11.5px;color:rgba(255,255,255,.5)}
-  .footer-note{max-width:56em;line-height:1.9}
-
-  /* mobile bottom bar */
-  .mobile-cta{
-    display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;
-    background:rgba(255,253,248,.96);backdrop-filter:blur(12px);
-    border-top:1px solid var(--line);padding:10px 14px calc(10px + env(safe-area-inset-bottom));
-    gap:10px;
-  }
-  .mobile-cta a{flex:1;text-align:center;padding:13px 8px;border-radius:14px;font-size:13.5px;font-weight:700}
-  .mobile-cta .m-price{background:var(--sand);border:1px solid var(--line)}
-  .mobile-cta .m-tel{background:var(--coral);color:#fff}
-
-  /* reveal */
-  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease}
-  .reveal.in{opacity:1;transform:none}
-
-  /* ---------- responsive ---------- */
-  @media (max-width:1000px){
-    .hero-grid{grid-template-columns:1fr;gap:26px}
-    .hero-art{max-width:460px;margin:0 auto}
-    .hero{padding-top:52px}
-    .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .floors{grid-template-columns:repeat(2,minmax(0,1fr))}
-    .scenes{grid-template-columns:1fr 1fr}
-    .scenes .scene:last-child{grid-column:1 / -1;min-height:220px}
-    .price-top{grid-template-columns:1fr}
-    .event-layout{grid-template-columns:1fr}
-    .access-grid{grid-template-columns:1fr}
-    .pack-grid{grid-template-columns:1fr}
-    .photo-band{grid-template-columns:1fr 1fr;grid-template-rows:auto}
-    .photo-band figure{aspect-ratio:4/3}
-    .photo-band figure:first-child{grid-column:1 / -1;grid-row:auto;aspect-ratio:16/9}
-  }
-  @media (max-width:860px){
-    .nav{
-      position:absolute;top:78px;left:0;right:0;
-      background:rgba(255,253,248,.98);backdrop-filter:blur(14px);
-      flex-direction:column;align-items:stretch;gap:0;
-      border-bottom:1px solid var(--line);
-      padding:8px 24px 18px;
-      display:none;box-shadow:0 20px 40px rgba(6,44,53,.1);
-    }
-    .nav.is-open{display:flex}
-    .nav a{padding:13px 0;border-bottom:1px solid var(--line);font-size:14px}
-    .nav a::after{display:none}
-    .nav-toggle{display:flex}
-    .header-tel{display:none}
-    .header-inner{height:68px}
-    .hero::after{height:46px}
-  }
-  @media (max-width:760px){
-    .section{padding:66px 0}
-    .container{padding-inline:20px}
-    .hero{padding:40px 0 74px}
-    .hero h1{font-size:36px}
-    .hero .eyebrow{font-size:10px;letter-spacing:.22em}
-    .hero-lead{font-size:14px}
-    .hero-badge{right:-2px;bottom:0;padding:14px 18px 12px;border-radius:18px}
-    .hero-badge strong{font-size:24px}
-    .hero-badge b{font-size:13px}
-    .hero-photo{width:min(100%,340px)}
-    .hero-photo-sub{width:96px;height:96px;bottom:6px;left:0}
-    .hero-flower{width:44px;height:44px;top:2px;left:2px}
-    .btn{padding:14px 22px;font-size:14px}
-    .cards{grid-template-columns:1fr}
-    .scenes{grid-template-columns:1fr}
-    .scenes .scene:last-child{grid-column:auto}
-    .floors{grid-template-columns:1fr}
-    .cta-call{text-align:left}
-    .mobile-cta{display:flex}
-    .site-footer{padding-bottom:110px}
-    .map-card iframe{height:260px}
-    .footer-links{gap:30px}
-    .section-head{margin-bottom:32px}
-    .photo-band{grid-template-columns:1fr}
-    .photo-band figure,.photo-band figure:first-child{grid-column:auto;aspect-ratio:4/3}
-    .photo-note{text-align:left;margin-bottom:28px}
-
-    /* 料金表はスマホでは1行ずつ積む */
-    .table-scroll{overflow:visible}
-    table{display:block;min-width:0;font-size:13px}
-    thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-    tbody{display:block}
-    tbody tr{display:block;padding:16px 18px}
-    tbody tr + tr{border-top:1px solid var(--line)}
-    tbody th{display:block;padding:0 0 8px;border:0;font-size:14px;white-space:normal}
-    td{display:block;padding:5px 0;border:0;white-space:normal;text-align:right;line-height:1.7}
-    td::before{content:attr(data-label);float:left;max-width:68%;font-family:"Zen Kaku Gothic New",sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.02em;color:var(--muted);text-align:left}
-    td::after{content:"";display:block;clear:both}
-    td.price{font-size:15px}
-    td.price small{font-size:10.5px}
-  }
-  @media (max-width:400px){
-    .hero h1{font-size:31px}
-    .hero-photo{width:min(100%,300px)}
-    .hero-badge{padding:12px 14px 10px}
-    .hero-badge strong{font-size:21px}
-    .hero-badge b{font-size:12px}
-    .table-head{padding:18px 20px}
-    tbody tr{padding:15px 16px}
-  }
-  @media (prefers-reduced-motion:reduce){
-    html{scroll-behavior:auto}
-    .reveal{opacity:1;transform:none;transition:none}
-    .ticker-track{animation:none}
-    *{transition-duration:.01ms !important}
-  }
+:root{
+  --ink:#24282a;
+  --text:#50575a;
+  --muted:#70777a;
+  --line:#dedfdb;
+  --paper:#f6f5f1;
+  --white:#fff;
+  --accent:#8b3d2d;
+  --accent-dark:#713124;
+  --max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{
+  margin:0;
+  color:var(--ink);
+  background:var(--white);
+  font-family:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  font-size:15px;
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit}
+.container{width:min(100% - 48px,var(--max));margin-inline:auto}
+.skip-link{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:8px 12px;z-index:100}
+.skip-link:focus{top:12px}
+.site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.header-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;flex-direction:column;line-height:1.25;flex:none}
+.brand-name{font-size:19px;font-weight:700;letter-spacing:.05em}
+.brand-sub{font-size:10px;color:var(--muted);letter-spacing:.08em}
+.nav{display:flex;align-items:center;gap:clamp(12px,2vw,26px)}
+.nav a{font-size:13px;color:#42484a;white-space:nowrap}
+.nav a:hover,.footer-links a:hover{color:var(--accent)}
+.header-tel{padding:9px 13px;border:1px solid var(--line);font-size:13px;font-weight:700;white-space:nowrap}
+.nav-toggle{display:none}
+.hero{background:var(--paper);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:center;padding:58px 0 52px}
+.hero-place{margin:0 0 13px;color:var(--accent);font-size:13px;font-weight:600;letter-spacing:.04em}
+.hero h1{margin:0;font-size:clamp(34px,4.4vw,54px);line-height:1.25;letter-spacing:.04em;font-weight:700}
+.hero-lead{max-width:480px;margin:18px 0 0;color:var(--text);font-size:15px}
+.hero-hours{margin:12px 0 0;color:var(--muted);font-size:12px}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 18px;border:1px solid var(--accent);border-radius:2px;font-size:13px;font-weight:700;transition:background-color .15s,color .15s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-dark)}
+.btn-secondary{color:var(--accent);background:transparent}
+.btn-secondary:hover{background:#f0e9e6}
+.hero-media img{width:100%;aspect-ratio:1.5/1;object-fit:cover}
+.photo-caption{margin:7px 0 0;color:var(--muted);font-size:11px}
+.quick-strip{background:#fff;border-bottom:1px solid var(--line)}
+.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:17px 0}
+.quick-item{padding:0 20px;border-left:1px solid var(--line)}
+.quick-item:first-child{padding-left:0;border-left:0}
+.quick-number{font-size:21px;font-weight:700;line-height:1.3}
+.quick-label{margin-left:7px;color:var(--muted);font-size:12px}
+.section{padding:70px 0}
+.section-muted{background:var(--paper)}
+.section-head{max-width:740px;margin-bottom:30px}
+.section-head .label{display:block;margin-bottom:5px;color:var(--accent);font-size:12px;font-weight:600}
+.section-head h2{margin:0;font-size:clamp(25px,2.7vw,32px);line-height:1.4;font-weight:700}
+.section-head p{max-width:680px;margin:11px 0 0;color:var(--text);font-size:14px}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.feature{padding:17px 18px 4px;border-right:1px solid var(--line)}
+.feature:first-child{padding-left:0}
+.feature:last-child{border-right:0}
+.feature-index{color:var(--accent);font-size:11px;font-weight:700}
+.feature h3{margin:5px 0 6px;font-size:16px;line-height:1.5}
+.feature p{margin:0;color:var(--text);font-size:13px;line-height:1.75}
+.price-highlight{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:17px 20px;margin-bottom:25px;background:#f2f0eb;border-left:3px solid var(--accent)}
+.price-highlight p{margin:0;font-size:14px;font-weight:600}
+.price-highlight small{display:block;margin-top:2px;color:var(--muted);font-size:11px;font-weight:400}
+.price-highlight strong{font-size:30px;line-height:1;color:var(--accent);white-space:nowrap}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.price-card{border-top:2px solid var(--ink)}
+.price-card h3{margin:12px 0 13px;font-size:17px}
+.price-card h3 small{margin-left:8px;color:var(--muted);font-size:11px;font-weight:400}
+.table-scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:12px}
+caption.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+th,td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}
+th{background:#f6f5f1;color:#4d5355;font-weight:600}
+th:first-child,td:first-child{text-align:left}
+.fine{margin:17px 0 0;padding:0;list-style:none;color:var(--muted);font-size:11px}
+.fine li{padding-left:1.1em;position:relative}
+.fine li::before{content:"※";position:absolute;left:0}
+.price-extras{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px;border-top:1px solid var(--line)}
+.price-extra{padding-top:13px;border-bottom:1px solid var(--line);padding-bottom:12px}
+.price-extra h3{margin:0 0 5px;font-size:14px}
+.price-extra p{margin:0;color:var(--text);font-size:12px}
+.facility-photos{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:4px 0 38px}
+.facility-photos figure{margin:0}
+.facility-photos img{width:100%;aspect-ratio:1.45/1;object-fit:cover}
+.facility-photos figcaption{padding-top:8px;font-size:13px;font-weight:600}
+.facility-photos figcaption small{display:block;color:var(--muted);font-size:11px;font-weight:400}
+.photo-note{margin:9px 0 0;color:var(--muted);font-size:11px}
+.floor-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.floor{padding-top:13px;border-top:1px solid var(--line)}
+.floor h3{margin:0;font-size:15px}
+.floor h3 span{display:block;color:var(--accent);font-size:12px;font-weight:600}
+.floor ul{margin:8px 0 0;padding-left:1.1em;color:var(--text);font-size:12px}
+.floor li{margin:3px 0}
+.event-note{display:grid;grid-template-columns:180px 1fr;gap:25px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.event-note strong{font-size:15px}
+.event-note p{margin:0;color:var(--text);font-size:13px}
+.inline-link{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.access-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:38px;align-items:start}
+.info-table{margin:0}
+.info-row{display:grid;grid-template-columns:120px 1fr;gap:15px;padding:13px 0;border-top:1px solid var(--line)}
+.info-row:last-child{border-bottom:1px solid var(--line)}
+.info-row dt{color:var(--muted);font-size:12px;font-weight:600}
+.info-row dd{margin:0;font-size:13px}
+.map-card{border:1px solid var(--line);background:#fff}
+.map-card iframe{width:100%;height:330px;border:0;display:block}
+.map-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 14px}
+.map-foot p{margin:0;color:var(--muted);font-size:12px}
+.map-foot a{font-size:12px;color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.faq-list{max-width:860px;border-top:1px solid var(--line)}
+.faq-list details{border-bottom:1px solid var(--line)}
+.faq-list summary{padding:15px 30px 15px 0;cursor:pointer;font-weight:600;font-size:14px}
+.faq-list .answer{padding:0 24px 16px 0;color:var(--text);font-size:13px}
+.contact-band{padding:34px 0;background:#252a2c;color:#fff}
+.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.contact-inner h2{margin:0;font-size:23px}
+.contact-inner p{margin:5px 0 0;color:#d6d9d9;font-size:13px}
+.contact-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.contact-tel{font-size:22px;font-weight:700;white-space:nowrap}
+.contact-hours{display:block;color:#d6d9d9;font-size:11px;text-align:right}
+.site-footer{padding:27px 0 32px;background:#fff}
+.footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}
+.footer-brand strong{display:block;font-size:16px}
+.footer-brand p{margin:6px 0 0;color:var(--muted);font-size:11px}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:12px}
+.footer-note{margin:22px 0 0;padding-top:13px;border-top:1px solid var(--line);color:var(--muted);font-size:10px}
+.footer-note p{margin:0}
+.footer-note a{text-decoration:underline;text-underline-offset:2px}
+.mobile-cta{display:none}
+@media(max-width:980px){
+  .header-tel{display:none}
+  .nav{gap:14px}
+  .nav a{font-size:12px}
+  .hero-grid{gap:30px}
+  .feature-grid{grid-template-columns:repeat(2,1fr)}
+  .feature:nth-child(3){padding-left:0;border-top:1px solid var(--line)}
+  .feature:nth-child(4){border-top:1px solid var(--line)}
+  .floor-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  html{scroll-padding-top:70px}
+  .container{width:min(100% - 36px,var(--max))}
+  .header-inner{height:64px}
+  .brand-name{font-size:17px}
+  .brand-sub{font-size:9px}
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center;padding:7px 11px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12px}
+  .nav{display:none;position:absolute;top:64px;left:0;right:0;padding:8px 18px 13px;background:#fff;border-bottom:1px solid var(--line)}
+  .nav.is-open{display:grid;gap:0}
+  .nav a{padding:10px 0;border-top:1px solid var(--line);font-size:13px}
+  .hero-grid{grid-template-columns:1fr;gap:25px;padding:37px 0 30px}
+  .hero h1{font-size:38px}
+  .hero-lead{font-size:14px}
+  .hero-media img{aspect-ratio:1.45/1}
+  .quick-grid{grid-template-columns:1fr 1fr;row-gap:13px;padding:15px 0}
+  .quick-item{padding:0 10px;border-left:1px solid var(--line)}
+  .quick-item:nth-child(odd){padding-left:0;border-left:0}
+  .quick-item:nth-child(n+3){padding-top:12px;border-top:1px solid var(--line)}
+  .quick-number{font-size:19px}
+  .quick-label{font-size:11px}
+  .section{padding:49px 0}
+  .section-head{margin-bottom:24px}
+  .section-head h2{font-size:25px}
+  .section-head p{font-size:13px}
+  .feature-grid{grid-template-columns:1fr 1fr}
+  .feature{padding:14px 11px 14px}
+  .feature:nth-child(odd){padding-left:0;border-right:1px solid var(--line)}
+  .feature:nth-child(even){border-right:0}
+  .feature:nth-child(2){border-top:0}
+  .feature:nth-child(3),.feature:nth-child(4){border-top:1px solid var(--line)}
+  .feature h3{font-size:14px}
+  .feature p{font-size:12px}
+  .price-highlight{padding:14px 15px}
+  .price-highlight p{font-size:12px}
+  .price-highlight strong{font-size:26px}
+  .price-grid{grid-template-columns:1fr;gap:25px}
+  table{font-size:11px}
+  th,td{padding:8px 5px}
+  .price-extras{grid-template-columns:1fr 1fr;gap:13px}
+  .facility-photos{gap:12px;margin-bottom:28px}
+  .facility-photos figcaption{font-size:12px}
+  .floor-grid{grid-template-columns:1fr 1fr;gap:18px}
+  .event-note{grid-template-columns:1fr;gap:5px}
+  .access-grid{grid-template-columns:1fr;gap:24px}
+  .map-card iframe{height:260px}
+  .contact-inner{align-items:flex-start;flex-direction:column}
+  .contact-inner h2{font-size:20px}
+  .contact-tel{font-size:20px}
+  .contact-hours{text-align:left}
+  .footer-grid{flex-direction:column;gap:18px}
+  .site-footer{padding-bottom:88px}
+  .mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;padding:8px 12px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line)}
+  .mobile-cta a{display:flex;justify-content:center;align-items:center;min-height:42px;font-size:13px;font-weight:700}
+  .mobile-cta .mobile-price{border:1px solid var(--line)}
+  .mobile-cta .mobile-call{margin-left:8px;background:var(--accent);color:#fff}
+}
+@media(max-width:420px){
+  .container{width:min(100% - 28px,var(--max))}
+  .hero h1{font-size:34px}
+  .hero-actions .btn{flex:1}
+  .facility-photos{grid-template-columns:1fr}
+  .facility-photos img{aspect-ratio:1.6/1}
+  .price-extras{grid-template-columns:1fr}
+  .info-row{grid-template-columns:92px 1fr;gap:10px}
+}
 </style>
 </head>
 <body>
-
-<header class="site-header" id="top">
+<a class="skip-link" href="#main">本文へ</a>
+<header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="#top" aria-label="てだこボウル トップ">
-      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="50" fill="#062c35"/>
-        <circle cx="50" cy="50" r="34" fill="#ff6a4d"/>
-        <circle cx="50" cy="50" r="26" fill="#0f6f73"/>
-        <circle cx="42" cy="42" r="4.6" fill="#062c35"/>
-        <circle cx="58" cy="42" r="4.6" fill="#062c35"/>
-        <circle cx="50" cy="58" r="4.6" fill="#062c35"/>
-      </svg>
-      <span class="brand-name">てだこボウル<span class="brand-sub">TEDAKO BOWL / URASOE</span></span>
+      <span class="brand-name">てだこボウル</span>
+      <span class="brand-sub">沖縄県浦添市 伊祖</span>
     </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav">メニュー</button>
     <nav class="nav" id="nav" aria-label="メインメニュー">
-      <a href="#reason">選ばれる理由</a>
-      <a href="#scene">楽しみ方</a>
-      <a href="#price">料金</a>
       <a href="#facility">施設案内</a>
-      <a href="#events">大会・イベント</a>
+      <a href="#price">料金</a>
+      <a href="#events">大会・月例会</a>
       <a href="#access">アクセス</a>
+      <a href="#faq">よくある質問</a>
     </nav>
-    <a class="header-tel" href="tel:0988745555">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      098-874-5555
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav" aria-label="メニューを開く"><span></span></button>
+    <a class="header-tel" href="tel:0988745555">098-874-5555</a>
   </div>
 </header>
-
-<main>
-  <!-- HERO -->
-  <section class="hero">
+<main id="main">
+  <section class="hero" id="top">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow">Urasoe, Okinawa — Since 2010</span>
-        <h1>きょうは、<br><em>転がして</em>笑おう。</h1>
-        <p class="hero-lead">
-          浦添のてだこボウルは、<strong>36レーン・2フロア</strong>のビッグな遊び場。
-          家族でわいわい、友だちと真剣勝負、朝から深夜まで。
-          沖縄の「遊びたい」に、とことん応えるボウリング場です。
-        </p>
+        <p class="hero-place">沖縄県浦添市伊祖</p>
+        <h1>てだこボウル</h1>
+        <p class="hero-lead">2階・4階に計36レーンを備えたボウリング場です。ご家族やご友人とのお出かけ、サークルや職場の集まりにご利用いただけます。</p>
+        <p class="hero-hours">月〜金 9:00〜翌1:00 ／ 土・日・祝 8:00〜翌1:00<br>年中無休（年末年始・ゴールデンウィークは変更の場合があります）</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#price">料金プランを見る
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a class="btn btn-ghost" href="#access">アクセス・電話番号</a>
+          <a class="btn btn-primary" href="#price">料金を見る</a>
+          <a class="btn btn-secondary" href="tel:0988745555">電話で問い合わせる</a>
         </div>
-        <ul class="hero-facts">
-          <li><span class="dot"></span>年中無休</li>
-          <li><span class="dot"></span>駐車場130台</li>
-          <li><span class="dot"></span>個室レーン10本</li>
-          <li><span class="dot"></span>朝8時から営業</li>
-        </ul>
       </div>
-
-      <div class="hero-art">
-        <div class="hero-photo">
-          <img class="hero-photo-main" src="images/lane.jpg" alt="木目のボウリングレーンに並ぶピン">
-          <img class="hero-photo-sub" src="images/scene-family.jpg" alt="親子でボウリングを楽しむ様子">
-          <svg class="hero-flower" viewBox="0 0 120 120" aria-hidden="true">
-            <g transform="translate(60 60)">
-              <g fill="#ff6a4d">
-                <ellipse cx="0" cy="-26" rx="17" ry="26"/>
-                <ellipse cx="0" cy="-26" rx="17" ry="26" transform="rotate(72)"/>
-                <ellipse cx="0" cy="-26" rx="17" ry="26" transform="rotate(144)"/>
-                <ellipse cx="0" cy="-26" rx="17" ry="26" transform="rotate(216)"/>
-                <ellipse cx="0" cy="-26" rx="17" ry="26" transform="rotate(288)"/>
-              </g>
-              <circle r="9" fill="#ffc247"/>
-            </g>
-          </svg>
-        </div>
-        <div class="hero-badge">
-          <small>土日 朝8:00〜10:00受付</small>
-          <b>1ゲーム <strong>¥100</strong></b>
-        </div>
+      <div class="hero-media">
+        <img src="images/lane.jpg" alt="ボウリングレーンのイメージ写真">
+        <p class="photo-caption">※掲載写真はイメージです。実際の施設の写真ではありません。</p>
       </div>
     </div>
   </section>
 
-  <!-- TICKER -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-      <span>36 LANES</span><span>2 FLOORS</span><span>10 PRIVATE LANES</span><span>NO-GUTTER LANE</span><span>OPEN 8:00 — 25:00</span><span>PARKING 130</span><span>URASOE OKINAWA</span>
-      <span>36 LANES</span><span>2 FLOORS</span><span>10 PRIVATE LANES</span><span>NO-GUTTER LANE</span><span>OPEN 8:00 — 25:00</span><span>PARKING 130</span><span>URASOE OKINAWA</span>
+  <section class="quick-strip" aria-label="施設概要">
+    <div class="container quick-grid">
+      <div class="quick-item"><span class="quick-number">36</span><span class="quick-label">レーン</span></div>
+      <div class="quick-item"><span class="quick-number">10</span><span class="quick-label">個室レーン</span></div>
+      <div class="quick-item"><span class="quick-number">130</span><span class="quick-label">駐車台数</span></div>
+      <div class="quick-item"><span class="quick-number">2</span><span class="quick-label">ボウリングフロア</span></div>
     </div>
-  </div>
+  </section>
 
-  <!-- REASON -->
-  <section class="section" id="reason">
+  <section class="section" id="facility">
     <div class="container">
-      <div class="section-head center reveal">
-        <span class="kicker">Why Tedako</span>
-        <h2>浦添で遊ぶなら、<br>ここがちょうどいい。</h2>
-        <p>広さ、設備、時間帯、ぜんぶ“遊びたい”に合わせて選べる。初めての人も、毎週来る人も、それぞれの楽しみ方が見つかるボウリング場です。</p>
+      <div class="section-head">
+        <span class="label">施設案内</span>
+        <h2>館内のご案内</h2>
+        <p>ボウリングフロアのほか、フードコート、ゲームコーナー、貸し会議室などがあります。</p>
       </div>
-      <div class="cards">
-        <article class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M3 21h18"/><path d="M7 21v-6h4v6"/><path d="M14 15h3"/></svg>
-          </div>
-          <span class="num">01</span>
-          <h3>沖縄でここだけ。<br>2フロア・36レーン</h3>
-          <p>2階と4階、合わせて36レーンの大型施設。大人数のグループでも待たされにくく、フロアを分けて思い思いに楽しめます。</p>
+      <div class="feature-grid" id="reason">
+        <article class="feature">
+          <span class="feature-index">01</span>
+          <h3>2階・4階に各18レーン</h3>
+          <p>合わせて36レーン。どちらのフロアも禁煙です。</p>
         </article>
-        <article class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13"/><path d="M4 21h16"/><path d="M9 6V4h6v2"/><path d="M9 21v-5h6v5"/></svg>
-          </div>
-          <span class="num">02</span>
-          <h3>まわりを気にせず。<br>2階に個室レーン10本</h3>
-          <p>2階フロアには10本の個室レーンを完備。小さな子ども連れや、誕生日会、ちょっとした集まりでも落ち着いて遊べます。</p>
+        <article class="feature">
+          <span class="feature-index">02</span>
+          <h3>個室レーン 10本</h3>
+          <p>2階に個室レーンとノーガターレーンがあります。</p>
         </article>
-        <article class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="3.2"/><path d="M5.5 21v-3.5a6.5 6.5 0 0 1 13 0V21"/><path d="M3 12h2M19 12h2"/></svg>
-          </div>
-          <span class="num">03</span>
-          <h3>はじめての子にも。<br>ノーガターレーンあり</h3>
-          <p>2階にはガターが出ないノーガターレーンを用意。ボウリングデビューのお子さまも、家族みんなで盛り上がれます。</p>
+        <article class="feature">
+          <span class="feature-index">03</span>
+          <h3>車いすでのご利用</h3>
+          <p>4階に車いす専用レーンと専用トイレがあります。</p>
         </article>
-        <article class="card reveal">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
-          </div>
-          <span class="num">04</span>
-          <h3>朝8時から翌1時まで。<br>年中無休で営業</h3>
-          <p>平日は9時、土日祝は8時オープン。仕事帰りにも、休日の朝にも。空いた時間をすぐ遊びに変えられるのがうれしい。</p>
+        <article class="feature">
+          <span class="feature-index">04</span>
+          <h3>館内設備</h3>
+          <p>フードコート、ゲームコーナー、プロショップ、貸し会議室を備えています。</p>
+        </article>
+      </div>
+      <div class="facility-photos">
+        <figure>
+          <img src="images/balls.jpg" alt="ボウリングボールのイメージ写真" loading="lazy">
+          <figcaption>ボールは無料で貸し出しています。<small>写真はイメージです。</small></figcaption>
+        </figure>
+        <figure>
+          <img src="images/shoes.jpg" alt="ボウリングシューズのイメージ写真" loading="lazy">
+          <figcaption>貸しシューズ 1足320円。<small>6歳以下は貸しシューズ無料です。写真はイメージです。</small></figcaption>
+        </figure>
+      </div>
+      <div class="floor-grid">
+        <article class="floor">
+          <h3><span>2階</span>ボウリングフロア</h3>
+          <ul><li>18レーン</li><li>個室レーン10本</li><li>ノーガターレーン</li><li>フードコート</li><li>ゲームコーナー</li><li>プロショップ</li></ul>
+        </article>
+        <article class="floor">
+          <h3><span>4階</span>ボウリングフロア</h3>
+          <ul><li>18レーン</li><li>車いす専用レーン・トイレ</li><li>会員ロッカールーム</li><li>コンコース</li></ul>
+        </article>
+        <article class="floor">
+          <h3><span>3階</span>サービスフロア</h3>
+          <ul><li>モバイル修理ラボ</li><li>貸し会議室</li></ul>
+        </article>
+        <article class="floor">
+          <h3><span>1階</span>飲食・駐車場</h3>
+          <ul><li>旨飯旨呑 楽々</li><li>駐車場130台</li></ul>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- SCENE -->
-  <section class="section section-sand" id="scene">
+  <section class="section section-muted" id="price">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">How to Enjoy</span>
-        <h2>だれと行く？<br>今日のシーンで選ぶ。</h2>
-        <p>同じ36レーンでも、楽しみ方はいろいろ。集まる人数と気分に合わせて、ぴったりの過ごし方を見つけてください。</p>
+      <div class="section-head">
+        <span class="label">料金</span>
+        <h2>ボウリング料金</h2>
+        <p>通常料金と各種パックを掲載しています。料金は税込の目安です。ご予約時の料金は異なる場合があります。</p>
       </div>
-      <div class="scenes">
-        <article class="scene scene-1 reveal">
-          <span class="scene-tag">FAMILY</span>
-          <span class="scene-emoji" aria-hidden="true">👨‍👩‍👧</span>
-          <h3>家族で、はじめての<br>ボウリングデビュー</h3>
-          <p>ノーガターレーンなら小さな子でも安心。幼児（6歳以下）は貸靴代も無料です。家族の記念日にも。</p>
-        </article>
-        <article class="scene scene-2 reveal">
-          <span class="scene-tag">FRIENDS</span>
-          <span class="scene-emoji" aria-hidden="true">🎳</span>
-          <h3>友だちと、<br>本気のスコア勝負</h3>
-          <p>2フロア36レーンだから、大人数でもまとめて遊べる。12ゲームパックで、とことん投げ込むのもあり。</p>
-        </article>
-        <article class="scene scene-3 reveal">
-          <span class="scene-tag">GROUP</span>
-          <span class="scene-emoji" aria-hidden="true">🎉</span>
-          <h3>サークル・職場・<br>パーティー利用に</h3>
-          <p>個室レーンや貸し会議室も。歓迎会や二次会、部活の打ち上げなど、集まる理由はなんでもOK。</p>
-        </article>
+      <div class="price-highlight">
+        <p>土・日・祝 8:00〜10:00受付<small>1ゲーム料金／全区分</small></p>
+        <strong>100円</strong>
       </div>
-    </div>
-  </section>
-
-  <!-- PRICE -->
-  <section class="section" id="price">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">Price</span>
-        <h2>遊びたい時間に、<br>いちばんお得な料金で。</h2>
-        <p>朝の100円ゲームから、長時間遊べるパックまで。人数と時間帯に合わせて、お得なプランを選んでください。</p>
+      <div class="price-grid">
+        <section class="price-card" aria-labelledby="weekday-title">
+          <h3 id="weekday-title">平日料金 <small>月〜金</small></h3>
+          <div class="table-scroll">
+            <table>
+              <caption class="sr-only">平日のボウリング料金表</caption>
+              <thead><tr><th>時間帯</th><th>一般</th><th>学生・シニア</th><th>メイト</th><th>ロッカー・シニア会員・幼児</th></tr></thead>
+              <tbody>
+                <tr><td>9:00〜18:00</td><td data-label="一般">470円</td><td data-label="学生・シニア">420円</td><td data-label="メイト">200円</td><td data-label="ロッカー会員・幼児">180円</td></tr>
+                <tr><td>18:00〜翌1:00</td><td data-label="一般">520円</td><td data-label="学生・シニア">470円</td><td data-label="メイト">一般 310円／学生 210円</td><td data-label="ロッカー会員・幼児">200円</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="price-card" aria-labelledby="weekend-title">
+          <h3 id="weekend-title">土日祝料金 <small>土・日・祝</small></h3>
+          <div class="table-scroll">
+            <table>
+              <caption class="sr-only">土日祝のボウリング料金表</caption>
+              <thead><tr><th>時間帯</th><th>一般</th><th>学生・シニア</th><th>メイト</th><th>ロッカー・シニア会員・幼児</th></tr></thead>
+              <tbody>
+                <tr><td>8:00〜10:00受付</td><td data-label="一般">100円</td><td data-label="学生・シニア">100円</td><td data-label="メイト">100円</td><td data-label="ロッカー会員・幼児">100円</td></tr>
+                <tr><td>10:00〜21:00</td><td data-label="一般">570円</td><td data-label="学生・シニア">520円</td><td data-label="メイト">一般 380円／学生 330円</td><td data-label="ロッカー会員・幼児">280円</td></tr>
+                <tr><td>21:00〜翌1:00</td><td data-label="一般">570円</td><td data-label="学生・シニア">520円</td><td data-label="メイト">280円</td><td data-label="ロッカー会員・幼児">200円</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
       </div>
-
-      <div class="price-top">
-        <div class="early reveal">
-          <span class="early-label">EARLY BIRD / SAT &amp; SUN</span>
-          <h3>土日の朝8:00〜10:00に<br>受付なら</h3>
-          <div class="big">¥100<span> / 1ゲーム</span></div>
-          <p>一般も学生もシニアも、メンバーも幼児も。全区分1ゲーム100円。朝の空いた時間が、いちばん熱い遊び時間に。</p>
-        </div>
-        <div class="price-note reveal">
-          <h3>はじめてでも、手ぶらでOK。</h3>
-          <p>貸しシューズは1足320円（幼児6歳以下は無料）。ボールも無料で貸し出しています。動きやすい服装で、そのままお越しください。障がい者手帳をご提示の方は、メンバー料金でご利用いただけます。</p>
-          <a class="btn btn-dark" href="tel:0988745555">空き状況を電話で聞く</a>
-        </div>
+      <div class="price-extras">
+        <div class="price-extra"><h3>ジュニアパック</h3><p>3ゲーム 850円／6ゲーム 1,050円<br>高校生以下限定</p></div>
+        <div class="price-extra"><h3>3ゲームパック</h3><p>土日祝限定 1,400円</p></div>
+        <div class="price-extra"><h3>5ゲームパック</h3><p>平日 1,450円／土日祝 1,750円</p></div>
+        <div class="price-extra"><h3>12ゲームロングパック</h3><p>月〜金 18時受付まで 1,500円<br>土日祝・18時以降 1,950円</p></div>
+        <div class="price-extra"><h3>メンバーズカード</h3><p>カード代金 一般・学生 350円／シニア 250円</p></div>
+        <div class="price-extra"><h3>貸しシューズ</h3><p>1足 320円／6歳以下無料</p></div>
       </div>
-
-      <div class="table-wrap reveal">
-        <div class="table-head">
-          <h3>平日料金</h3>
-          <span class="tag">月〜金</span>
-        </div>
-        <div class="table-scroll">
-          <table>
-            <caption class="sr-only">平日のボウリング料金表</caption>
-            <thead>
-              <tr>
-                <th scope="col">時間帯</th>
-                <th scope="col">一般</th>
-                <th scope="col">学生・シニア</th>
-                <th scope="col">メイト</th>
-                <th scope="col">ロッカー・シニア会員・幼児</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">9:00〜18:00</th>
-                <td class="price" data-label="一般">¥470</td>
-                <td class="price" data-label="学生・シニア">¥420</td>
-                <td class="price" data-label="メイト">¥200</td>
-                <td class="price" data-label="ロッカー・シニア会員・幼児">¥180</td>
-              </tr>
-              <tr>
-                <th scope="row">18:00〜翌1:00</th>
-                <td class="price" data-label="一般">¥520</td>
-                <td class="price" data-label="学生・シニア">¥470</td>
-                <td class="price" data-label="メイト">¥310 <small>/ 学生 ¥210</small></td>
-                <td class="price" data-label="ロッカー・シニア会員・幼児">¥200</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="table-wrap reveal">
-        <div class="table-head">
-          <h3>土日祝料金</h3>
-          <span class="tag weekend">土・日・祝</span>
-        </div>
-        <div class="table-scroll">
-          <table>
-            <caption class="sr-only">土日祝のボウリング料金表</caption>
-            <thead>
-              <tr>
-                <th scope="col">時間帯</th>
-                <th scope="col">一般</th>
-                <th scope="col">学生・シニア</th>
-                <th scope="col">メイト</th>
-                <th scope="col">ロッカー・シニア会員・幼児</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">8:00〜10:00 受付</th>
-                <td class="price" data-label="一般">¥100</td>
-                <td class="price" data-label="学生・シニア">¥100</td>
-                <td class="price" data-label="メイト">¥100</td>
-                <td class="price" data-label="ロッカー・シニア会員・幼児">¥100</td>
-              </tr>
-              <tr>
-                <th scope="row">10:00〜21:00</th>
-                <td class="price" data-label="一般">¥570</td>
-                <td class="price" data-label="学生・シニア">¥520</td>
-                <td class="price" data-label="メイト">¥380 <small>/ 学生 ¥330</small></td>
-                <td class="price" data-label="ロッカー・シニア会員・幼児">¥280</td>
-              </tr>
-              <tr>
-                <th scope="row">21:00〜翌1:00</th>
-                <td class="price" data-label="一般">¥570</td>
-                <td class="price" data-label="学生・シニア">¥520</td>
-                <td class="price" data-label="メイト">¥280</td>
-                <td class="price" data-label="ロッカー・シニア会員・幼児">¥200</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="pack-grid">
-        <div class="pack reveal">
-          <p>ジュニアパック 3ゲーム<span>高校生以下限定</span></p>
-          <b>¥850</b>
-        </div>
-        <div class="pack reveal">
-          <p>ジュニアパック 6ゲーム<span>高校生以下限定</span></p>
-          <b>¥1,050</b>
-        </div>
-        <div class="pack reveal">
-          <p>12ゲーム ロングパック<span>月〜金 18時受付まで ¥1,500 / 土日祝・18時以降 ¥1,950</span></p>
-          <b>¥1,500〜</b>
-        </div>
-        <div class="pack reveal">
-          <p>5ゲームパック<span>平日 ¥1,450 / 土日祝 ¥1,750</span></p>
-          <b>¥1,450〜</b>
-        </div>
-        <div class="pack reveal">
-          <p>3ゲームパック<span>土日祝限定</span></p>
-          <b>¥1,400</b>
-        </div>
-        <div class="pack reveal">
-          <p>メンバーズカード<span>カード代金 一般・学生 ¥350 / シニア ¥250</span></p>
-          <b>¥350〜</b>
-        </div>
-      </div>
-
       <ul class="fine">
-        <li>表示料金は税込です。年末年始・ゴールデンウィーク期間は営業時間および料金体系が異なる場合があります。</li>
-        <li>シニアは男性60歳以上・女性55歳以上、学生は大学・専門学校以下が対象です。幼児は6歳以下（貸靴無料）。</li>
-        <li>上記は店頭の料金表に基づく目安です。ご予約時の料金とは異なる場合があるため、詳しくはお電話でご確認ください。</li>
+        <li>シニアは男性60歳以上・女性55歳以上、学生は大学・専門学校以下です。</li>
+        <li>障がい者手帳を受付時に提示すると、メンバー料金で利用できます。</li>
+        <li>年末年始・ゴールデンウィークは営業時間・料金が異なる場合があります。最新料金は店舗へご確認ください。</li>
       </ul>
     </div>
   </section>
 
-  <!-- FACILITY -->
-  <section class="section section-sand" id="facility">
-    <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">Facility</span>
-        <h2>4フロアまるごと、<br>遊びのための場所。</h2>
-        <p>ボウリングだけじゃない。食べて、遊んで、休んで。1階から4階まで、一日中いられる施設です。</p>
-      </div>
-      <div class="photo-band">
-        <figure class="reveal">
-          <img src="images/lane.jpg" alt="木目のレーンに並ぶボウリングのピン" loading="lazy">
-          <figcaption><span>36 LANES / 2 FLOORS</span>広いレーンで、思いきり。</figcaption>
-        </figure>
-        <figure class="reveal">
-          <img src="images/balls.jpg" alt="ボールリターンに並ぶカラフルなボウリングボール" loading="lazy">
-          <figcaption><span>RENTAL</span>ボールは無料で貸し出し。</figcaption>
-        </figure>
-        <figure class="reveal">
-          <img src="images/shoes.jpg" alt="レーンの上に置かれたボウリングシューズとボール" loading="lazy">
-          <figcaption><span>SHOES</span>貸しシューズ 1足320円。</figcaption>
-        </figure>
-      </div>
-      <p class="photo-note">※掲載写真はイメージです。</p>
-
-      <div class="floors">
-        <article class="floor reveal">
-          <div class="floor-no">2F<span>FLOOR</span></div>
-          <h3>ボウリング（18レーン）</h3>
-          <ul>
-            <li>禁煙フロア</li>
-            <li>個室レーン10本</li>
-            <li>ノーガターレーン</li>
-            <li>フードコート</li>
-            <li>ゲームコーナー</li>
-            <li>プロショップ</li>
-          </ul>
-          <span class="floor-tag">家族・グループに</span>
-        </article>
-        <article class="floor reveal">
-          <div class="floor-no">4F<span>FLOOR</span></div>
-          <h3>ボウリング（18レーン）</h3>
-          <ul>
-            <li>禁煙フロア</li>
-            <li>車いす専用レーン</li>
-            <li>車いす専用トイレ</li>
-            <li>会員ロッカールーム</li>
-            <li>コンコース</li>
-          </ul>
-          <span class="floor-tag">ゆったり遊ぶなら</span>
-        </article>
-        <article class="floor reveal">
-          <div class="floor-no">3F<span>FLOOR</span></div>
-          <h3>サービスフロア</h3>
-          <ul>
-            <li>モバイル修理ラボ</li>
-            <li>貸し会議室</li>
-          </ul>
-          <span class="floor-tag">待ち時間にも</span>
-        </article>
-        <article class="floor reveal">
-          <div class="floor-no">1F<span>FLOOR</span></div>
-          <h3>飲食・駐車場</h3>
-          <ul>
-            <li>旨飯旨呑 楽々</li>
-            <li>駐車場130台</li>
-          </ul>
-          <span class="floor-tag">遊んだあとはごはん</span>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- EVENTS -->
   <section class="section" id="events">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">Events &amp; Community</span>
-        <h2>うまくなっても、<br>ならなくても、参加OK。</h2>
-        <p>毎月、初心者から常連さんまで楽しめる大会・月例会を開催しています。観戦だけでも、見学だけでも歓迎です。</p>
+      <div class="section-head">
+        <span class="label">大会・月例会</span>
+        <h2>開催予定について</h2>
+        <p>開催日、参加条件、参加費は月ごとに異なります。最新情報は公式Instagramまたは店舗へご確認ください。</p>
       </div>
-      <div class="event-layout">
-        <div class="event-list reveal">
-          <div class="event-item">
-            <div class="event-day"><small>毎月</small><b>第1<br>日曜</b></div>
-            <div>
-              <h4>支配人杯 ボウリング大会</h4>
-              <p>月替わりのスタートを切る、恒例のオープン大会。</p>
-            </div>
-          </div>
-          <div class="event-item">
-            <div class="event-day"><small>毎月</small><b>第2<br>日曜</b></div>
-            <div>
-              <h4>シニア＆レディース月例会 / ダブルス大会</h4>
-              <p>シニア・レディースの月例会と、ペアで挑むダブルス大会。</p>
-            </div>
-          </div>
-          <div class="event-item">
-            <div class="event-day"><small>毎月</small><b>第3<br>日曜</b></div>
-            <div>
-              <h4>サンデーモーニングボウリング大会</h4>
-              <p>朝から気持ちよく投げる、日曜のモーニング大会。</p>
-            </div>
-          </div>
-          <div class="event-item">
-            <div class="event-day"><small>毎月</small><b>第4<br>金曜</b></div>
-            <div>
-              <h4>「T3」てだこトリオボウリング大会</h4>
-              <p>3人1組でチーム対抗。仲間とわいわい楽しめる大会です。</p>
-            </div>
-          </div>
-          <div class="event-item">
-            <div class="event-day"><small>毎月</small><b>第4<br>日曜</b></div>
-            <div>
-              <h4>おはようボウリング月例会 / 月例会</h4>
-              <p>毎月の成果を試す月例会。参加方法は店頭でご案内します。</p>
-            </div>
-          </div>
-        </div>
-        <div class="event-side">
-          <div class="side-card teal reveal">
-            <span class="side-label">MEMBERS</span>
-            <h3>メンバーズカードで、<br>いつものプレイがもっとお得に。</h3>
-            <p>入会したその日から使えるメンバー料金。プロショップの商品10%割引（特価品除く）やロッカー利用など、通うほどお得になります。</p>
-            <a class="arrow" href="tel:0988745555">入会方法を聞く →</a>
-          </div>
-          <div class="side-card sun reveal">
-            <span class="side-label">BEGINNERS</span>
-            <h3>初心者向け<br>3点セット好評販売中。</h3>
-            <p>これから始める人にうれしいセットをご用意しています。詳細は2階フロントスタッフまでお気軽にどうぞ。</p>
-            <a class="arrow" href="#access">店舗情報を見る →</a>
-          </div>
-        </div>
+      <div class="event-note">
+        <strong>お問い合わせ</strong>
+        <p>団体利用やレーン確保の可否・条件は、人数や日時によって異なります。電話でご相談ください。<br><a class="inline-link" href="https://www.instagram.com/tedako_bowl" target="_blank" rel="noopener">てだこボウル公式Instagram</a></p>
       </div>
     </div>
   </section>
 
-  <!-- ACCESS -->
-  <section class="section section-sand" id="access">
+  <section class="section section-muted" id="access">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">Access</span>
-        <h2>那覇から、<br>ふらっと行ける浦添。</h2>
-        <p>国道沿いで車でもバスでも通いやすい場所。駐車場は130台分あるので、家族やグループでのお出かけにも便利です。</p>
+      <div class="section-head">
+        <span class="label">アクセス</span>
+        <h2>店舗情報</h2>
       </div>
       <div class="access-grid">
-        <div class="info-list">
-          <div class="info-row reveal">
-            <span class="ico">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </span>
-            <div>
-              <h4>ADDRESS</h4>
-              <p>〒901-2132<br>沖縄県浦添市伊祖2-9-2</p>
-            </div>
-          </div>
-          <div class="info-row reveal">
-            <span class="ico">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </span>
-            <div>
-              <h4>TEL / FAX</h4>
-              <p><b>TEL 098-874-5555</b><br>FAX 098-874-5566</p>
-            </div>
-          </div>
-          <div class="info-row reveal">
-            <span class="ico">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
-            </span>
-            <div>
-              <h4>OPEN</h4>
-              <p>月〜金 9:00〜翌1:00<br>土・日・祝 8:00〜翌1:00<br><span style="font-size:12px;color:var(--muted)">年中無休（年末年始・GWは変動あり）</span></p>
-            </div>
-          </div>
-          <div class="info-row reveal">
-            <span class="ico">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg>
-            </span>
-            <div>
-              <h4>ACCESS / PARKING</h4>
-              <p>バス停「伊祖入口」すぐ<br>ゆいレール「古島駅」からバス約5分＋徒歩<br>那覇バスターミナルからバス約25分<br>駐車場130台</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="map-card reveal">
-          <iframe
-            src="https://www.google.com/maps?q=%E3%81%A6%E3%81%A0%E3%81%93%E3%83%9C%E3%82%A6%E3%83%AB%20%E6%B2%96%E7%B8%84%E7%9C%8C%E6%B5%A6%E6%B7%BB%E5%B8%82%E4%BC%8A%E7%A5%962-9-2&output=embed"
-            title="てだこボウルの地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <dl class="info-table">
+          <div class="info-row"><dt>住所</dt><dd>〒901-2132<br>沖縄県浦添市伊祖2-9-2</dd></div>
+          <div class="info-row"><dt>電話</dt><dd><a class="inline-link" href="tel:0988745555">098-874-5555</a></dd></div>
+          <div class="info-row"><dt>営業時間</dt><dd>月〜金 9:00〜翌1:00<br>土・日・祝 8:00〜翌1:00<br>年中無休（年末年始・GWは変動あり）</dd></div>
+          <div class="info-row"><dt>駐車場</dt><dd>130台</dd></div>
+          <div class="info-row"><dt>FAX</dt><dd>098-874-5566</dd></div>
+        </dl>
+        <div class="map-card">
+          <iframe src="https://www.google.com/maps?q=%E3%81%A6%E3%81%A0%E3%81%93%E3%83%9C%E3%82%A6%E3%83%AB%20%E6%B2%96%E7%B8%84%E7%9C%8C%E6%B5%A6%E6%B7%BB%E5%B8%82%E4%BC%8A%E7%A5%962-9-2&output=embed" title="てだこボウルの地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
           <div class="map-foot">
             <p>沖縄県浦添市伊祖2-9-2</p>
-            <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=%E3%81%A6%E3%81%A0%E3%81%93%E3%83%9C%E3%82%A6%E3%83%AB%20%E6%B2%96%E7%B8%84%E7%9C%8C%E6%B5%A6%E6%B7%BB%E5%B8%82%E4%BC%8A%E7%A5%962-9-2" target="_blank" rel="noopener">Googleマップで開く</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=%E3%81%A6%E3%81%A0%E3%81%93%E3%83%9C%E3%82%A6%E3%83%AB%20%E6%B2%96%E7%B8%84%E7%9C%8C%E6%B5%A6%E6%B7%BB%E5%B8%82%E4%BC%8A%E7%A5%962-9-2" target="_blank" rel="noopener">Googleマップで開く</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="section">
+  <section class="section" id="faq">
     <div class="container">
-      <div class="section-head center reveal">
-        <span class="kicker">FAQ</span>
-        <h2>よくあるご質問</h2>
+      <div class="section-head">
+        <span class="label">よくある質問</span>
+        <h2>ご利用前に</h2>
       </div>
-      <div class="faq">
-        <details class="reveal">
-          <summary>予約はできますか？</summary>
-          <div class="answer">団体でのご利用やレーン確保については、お電話（098-874-5555）でご相談ください。空き状況もあわせてご案内します。</div>
-        </details>
-        <details class="reveal">
-          <summary>手ぶらでも大丈夫ですか？</summary>
-          <div class="answer">はい。ボールは無料でお貸し出し、貸しシューズは1足320円（幼児6歳以下は無料）です。動きやすい服装でお越しください。</div>
-        </details>
-        <details class="reveal">
-          <summary>子ども連れでも楽しめますか？</summary>
-          <div class="answer">2階フロアにノーガターレーンをご用意しています。個室レーンもあるので、小さなお子さま連れのご家族も安心して遊べます。</div>
-        </details>
-        <details class="reveal">
-          <summary>車で行っても駐車できますか？</summary>
-          <div class="answer">駐車場は130台分ございます。満車の際はスタッフの案内に従ってください。</div>
-        </details>
-        <details class="reveal">
-          <summary>見学だけでもいいですか？</summary>
-          <div class="answer">もちろんです。大会の観戦や施設の見学も歓迎しています。お気軽にお立ち寄りください。</div>
-        </details>
+      <div class="faq-list">
+        <details><summary>予約はできますか？</summary><div class="answer">団体利用やレーン確保の可否・条件は、人数や日時によって異なります。お電話でご相談ください。</div></details>
+        <details><summary>ボウリングが初めてでも利用できますか？</summary><div class="answer">ボールは無料で貸し出しています。貸しシューズは1足320円、6歳以下は無料です。利用方法は2階フロントでご確認ください。</div></details>
+        <details><summary>子どもと一緒に利用できますか？</summary><div class="answer">2階にノーガターレーンと個室レーンがあります。幼児（6歳以下）は貸しシューズが無料です。</div></details>
+        <details><summary>車いすで利用できますか？</summary><div class="answer">4階に車いす専用レーンと専用トイレがあります。詳しい利用条件は店舗へお問い合わせください。</div></details>
+        <details><summary>大会の日程はどこで確認できますか？</summary><div class="answer">大会・月例会の予定は月ごとに異なります。<a class="inline-link" href="https://www.instagram.com/tedako_bowl" target="_blank" rel="noopener">公式Instagram</a>またはお電話でご確認ください。</div></details>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-band">
-    <div class="container cta-inner">
-      <div class="reveal">
-        <h2>今日、投げに行こう。</h2>
-        <p>家族でも、友だちでも、ひとりでも。<br>浦添・伊祖のてだこボウルでお待ちしています。</p>
-      </div>
-      <div class="cta-call reveal">
-        <span class="tel-label">RESERVATION &amp; INFO</span>
-        <a class="tel" href="tel:0988745555">098-874-5555</a>
-        <small>受付時間：営業時間内</small>
+  <section class="contact-band">
+    <div class="container contact-inner">
+      <div><h2>お問い合わせ</h2><p>団体利用、料金、当日の状況など、お気軽にお電話ください。</p></div>
+      <div class="contact-actions">
+        <div><a class="contact-tel" href="tel:0988745555">098-874-5555</a><span class="contact-hours">受付時間：営業時間内</span></div>
       </div>
     </div>
   </section>
 </main>
-
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <span class="brand-name">てだこボウル</span>
-        <span class="brand-sub">TEDAKO BOWL / URASOE OKINAWA</span>
-        <p>〒901-2132 沖縄県浦添市伊祖2-9-2<br>TEL 098-874-5555 / FAX 098-874-5566<br>月〜金 9:00〜翌1:00 / 土日祝 8:00〜翌1:00（年中無休）</p>
+        <strong>てだこボウル</strong>
+        <p>〒901-2132 沖縄県浦添市伊祖2-9-2<br>TEL 098-874-5555 ／ FAX 098-874-5566</p>
       </div>
       <div class="footer-links">
-        <div>
-          <h4>MENU</h4>
-          <ul>
-            <li><a href="#reason">選ばれる理由</a></li>
-            <li><a href="#price">料金プラン</a></li>
-            <li><a href="#facility">施設案内</a></li>
-            <li><a href="#events">大会・イベント</a></li>
-            <li><a href="#access">アクセス</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>LINKS</h4>
-          <ul>
-            <li><a href="https://www.instagram.com/tedako_bowl" target="_blank" rel="noopener">Instagram</a></li>
-            <li><a href="https://www.facebook.com/tedakobowl2" target="_blank" rel="noopener">Facebook</a></li>
-            <li><a href="https://tedakobowl.com/" target="_blank" rel="noopener">公式サイト</a></li>
-          </ul>
-        </div>
+        <a href="https://tedakobowl.com/" target="_blank" rel="noopener">公式サイト</a>
+        <a href="https://www.instagram.com/tedako_bowl" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/tedakobowl2" target="_blank" rel="noopener">Facebook</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p class="footer-note">掲載内容は2026年11月時点で公開されている情報をもとに構成したものです。営業時間・料金・イベント内容は変更となる場合がありますので、お出かけ前に店舗へご確認ください。</p>
-      <p>&copy; 2026 てだこボウル</p>
+    <div class="footer-note">
+      <p>住所・営業時間・施設情報は<a href="https://tedakobowl.com/" target="_blank" rel="noopener">てだこボウル公式サイト</a>を参照しています。料金・大会予定は変更となる場合があるため、お出かけ前に店舗へご確認ください。</p>
     </div>
   </div>
 </footer>
-
-<div class="mobile-cta">
-  <a class="m-price" href="#price">料金を見る</a>
-  <a class="m-tel" href="tel:0988745555">電話する</a>
+<div class="mobile-cta" aria-label="お問い合わせ">
+  <a class="mobile-price" href="#price">料金を見る</a>
+  <a class="mobile-call" href="tel:0988745555">電話する</a>
 </div>
-
 <script>
-  // header shadow
-  const header = document.querySelector('.site-header');
-  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 10);
-  onScroll();
-  window.addEventListener('scroll', onScroll, { passive: true });
-
-  // mobile nav
-  const toggle = document.getElementById('navToggle');
-  const nav = document.getElementById('nav');
-  toggle.addEventListener('click', () => {
-    const open = nav.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
-  });
-  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    nav.classList.remove('is-open');
-    toggle.setAttribute('aria-expanded', 'false');
-  }));
-
-  // scroll reveal
-  const items = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    items.forEach((el, i) => {
-      el.style.transitionDelay = (i % 4) * 60 + 'ms';
-      io.observe(el);
-    });
-  } else {
-    items.forEach(el => el.classList.add('in'));
-  }
+const navToggle=document.getElementById("navToggle");
+const nav=document.getElementById("nav");
+navToggle.addEventListener("click",()=>{
+  const open=nav.classList.toggle("is-open");
+  navToggle.setAttribute("aria-expanded",String(open));
+});
+nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{
+  nav.classList.remove("is-open");
+  navToggle.setAttribute("aria-expanded","false");
+}));
 </script>
 </body>
 </html>
